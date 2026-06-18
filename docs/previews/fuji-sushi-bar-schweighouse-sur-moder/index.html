@@ -109,47 +109,259 @@
 
       <section id="carte" class="section section-menu" aria-labelledby="menu-title">
         <div class="section-heading">
-          <p class="eyebrow">Carte</p>
-          <h2 id="menu-title">Une carte lisible, pensee pour declencher la commande.</h2>
+          <h2 id="menu-title">Carte click&collect, lisible en une seule selection.</h2>
+          <p>
+            Un apercu statique du parcours de commande : produits regroupes, prix visibles,
+            panier local et paiement au retrait.
+          </p>
         </div>
-        <div class="menu-layout">
-          <div class="category-panel" aria-label="Categories principales">
-            <button class="category-button is-active" type="button" data-category="signatures">Signatures</button>
-            <button class="category-button" type="button" data-category="classiques">Classiques</button>
-            <button class="category-button" type="button" data-category="boxs">Boxs</button>
+
+        <div class="menu-shell" data-order-section>
+          <div class="menu-main">
+            <div class="category-panel" aria-label="Categories principales">
+              <button class="category-button is-active" type="button" aria-pressed="true" data-menu-filter="all">Tout</button>
+              <button class="category-button" type="button" aria-pressed="false" data-menu-filter="signatures">Signatures</button>
+              <button class="category-button" type="button" aria-pressed="false" data-menu-filter="california">California</button>
+              <button class="category-button" type="button" aria-pressed="false" data-menu-filter="boxs">Boxs</button>
+            </div>
+
+            <div class="product-grid" data-product-grid>
+              <article class="product-card is-signature" data-product-card data-category="signatures" data-product-id="creation-crevette" data-name="Creation Crevette x8" data-price="11.50">
+                <span class="product-badge">Signature</span>
+                <div class="product-mark" aria-hidden="true">Fuji</div>
+                <h3>Creation Crevette x8</h3>
+                <p>Roll signature crevette, format premium pour une selection chef.</p>
+                <div class="product-meta">
+                  <span>x8</span>
+                  <strong>11,50 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="creation-crevette">0</span>
+                  <button class="add-button" type="button" data-add-product="creation-crevette">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card is-signature" data-product-card data-category="signatures" data-product-id="ebi-teriyaki-roll" data-name="Ebi Teriyaki Roll x6" data-price="10.00">
+                <span class="product-badge">Signature</span>
+                <div class="product-mark" aria-hidden="true">Ebi</div>
+                <h3>Ebi Teriyaki Roll x6</h3>
+                <p>Roll crevette teriyaki, mis en avant comme choix signature.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>10,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="ebi-teriyaki-roll">0</span>
+                  <button class="add-button" type="button" data-add-product="ebi-teriyaki-roll">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card is-signature" data-product-card data-category="signatures" data-product-id="kani-avocat" data-name="California Kani Avocat x6" data-price="7.00">
+                <span class="product-badge">Signature</span>
+                <div class="product-mark" aria-hidden="true">Kani</div>
+                <h3>California Kani Avocat x6</h3>
+                <p>Recette kani avocat, simple a reperer dans les creations Fuji.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>7,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="kani-avocat">0</span>
+                  <button class="add-button" type="button" data-add-product="kani-avocat">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card is-signature" data-product-card data-category="signatures" data-product-id="fuji-jardin" data-name="Creation Fuji x Le Jardin x6" data-price="10.00">
+                <span class="product-badge">Signature</span>
+                <div class="product-mark" aria-hidden="true">Chef</div>
+                <h3>Creation Fuji x Le Jardin x6</h3>
+                <p>Creation collaborative, traitee comme option premium de la carte.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>10,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="fuji-jardin">0</span>
+                  <button class="add-button" type="button" data-add-product="fuji-jardin">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="california" data-product-id="saumon-avocat" data-name="Saumon Avocat x6" data-price="5.50">
+                <span class="product-badge">California</span>
+                <div class="product-mark" aria-hidden="true">Cal</div>
+                <h3>Saumon Avocat x6</h3>
+                <p>Classique saumon avocat, format rapide pour le click&collect.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>5,50 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="saumon-avocat">0</span>
+                  <button class="add-button" type="button" data-add-product="saumon-avocat">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="california" data-product-id="saumon-cheese" data-name="Saumon Cheese x6" data-price="6.50">
+                <span class="product-badge">California</span>
+                <div class="product-mark" aria-hidden="true">Cal</div>
+                <h3>Saumon Cheese x6</h3>
+                <p>Saumon et fromage, une valeur sure affichee sans navigation multiple.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>6,50 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="saumon-cheese">0</span>
+                  <button class="add-button" type="button" data-add-product="saumon-cheese">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="california" data-product-id="avocat-cheese" data-name="Avocat Cheese x6" data-price="5.00">
+                <span class="product-badge">California</span>
+                <div class="product-mark" aria-hidden="true">Cal</div>
+                <h3>Avocat Cheese x6</h3>
+                <p>Option vegetarienne courte, prix immediatement visible.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>5,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="avocat-cheese">0</span>
+                  <button class="add-button" type="button" data-add-product="avocat-cheese">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="california" data-product-id="crevette-avocat" data-name="Crevette Avocat x6" data-price="7.00">
+                <span class="product-badge">California</span>
+                <div class="product-mark" aria-hidden="true">Cal</div>
+                <h3>Crevette Avocat x6</h3>
+                <p>Recette crevette avocat, ajoutee en un geste au panier local.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>7,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="crevette-avocat">0</span>
+                  <button class="add-button" type="button" data-add-product="crevette-avocat">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="california" data-product-id="crevette-avocat-concombre" data-name="Crevette Avocat Concombre x6" data-price="7.50">
+                <span class="product-badge">California</span>
+                <div class="product-mark" aria-hidden="true">Cal</div>
+                <h3>Crevette Avocat Concombre x6</h3>
+                <p>Variation fraiche avec concombre, lisible sans changer de page.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>7,50 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="crevette-avocat-concombre">0</span>
+                  <button class="add-button" type="button" data-add-product="crevette-avocat-concombre">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="california" data-product-id="avocat-mangue-concombre" data-name="Avocat Mangue Concombre x6" data-price="5.50">
+                <span class="product-badge">California</span>
+                <div class="product-mark" aria-hidden="true">Cal</div>
+                <h3>Avocat Mangue Concombre x6</h3>
+                <p>Option fruit et fraicheur, positionnee dans le meme parcours.</p>
+                <div class="product-meta">
+                  <span>x6</span>
+                  <strong>5,50 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="avocat-mangue-concombre">0</span>
+                  <button class="add-button" type="button" data-add-product="avocat-mangue-concombre">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="boxs" data-product-id="salmon-lovers" data-name="Salmon Lovers" data-price="20.00">
+                <span class="product-badge">Box</span>
+                <div class="product-mark" aria-hidden="true">Box</div>
+                <h3>Salmon Lovers</h3>
+                <p>Box saumon pour une commande rapide et bien identifiee.</p>
+                <div class="product-meta">
+                  <span>Box</span>
+                  <strong>20,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="salmon-lovers">0</span>
+                  <button class="add-button" type="button" data-add-product="salmon-lovers">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="boxs" data-product-id="baby-bloom-1" data-name="Baby Bloom 1" data-price="12.00">
+                <span class="product-badge">Box</span>
+                <div class="product-mark" aria-hidden="true">Box</div>
+                <h3>Baby Bloom 1</h3>
+                <p>Petite box accessible, adaptee a une selection simple.</p>
+                <div class="product-meta">
+                  <span>Box</span>
+                  <strong>12,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="baby-bloom-1">0</span>
+                  <button class="add-button" type="button" data-add-product="baby-bloom-1">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="boxs" data-product-id="tuna-lovers" data-name="Tuna Lovers" data-price="25.00">
+                <span class="product-badge">Box</span>
+                <div class="product-mark" aria-hidden="true">Box</div>
+                <h3>Tuna Lovers</h3>
+                <p>Selection thon, claire pour les commandes groupees.</p>
+                <div class="product-meta">
+                  <span>Box</span>
+                  <strong>25,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="tuna-lovers">0</span>
+                  <button class="add-button" type="button" data-add-product="tuna-lovers">Ajouter</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card data-category="boxs" data-product-id="assortiment-chef-2" data-name="Assortiment du chef pour 2 pers" data-price="50.00">
+                <span class="product-badge">Box</span>
+                <div class="product-mark" aria-hidden="true">Chef</div>
+                <h3>Assortiment du chef pour 2 pers</h3>
+                <p>Grande selection partagee, traitee comme panier repas premium.</p>
+                <div class="product-meta">
+                  <span>2 pers</span>
+                  <strong>50,00 &euro;</strong>
+                </div>
+                <div class="product-actions">
+                  <span class="product-quantity" data-product-qty="assortiment-chef-2">0</span>
+                  <button class="add-button" type="button" data-add-product="assortiment-chef-2">Ajouter</button>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="menu-list" data-menu-list>
-            <article class="menu-item" data-group="signatures">
-              <span class="item-type">Signature</span>
-              <h3>I CREATION Crevette x8</h3>
-              <p>Une entree premium pour valoriser les creations Fuji des l'ouverture de la carte.</p>
-            </article>
-            <article class="menu-item is-premium" data-group="signatures">
-              <span class="item-type">Signature</span>
-              <h3>I Ebi Teriyaki Roll x6</h3>
-              <p>Un roll signature mis en scene comme un choix chef, rapide a identifier.</p>
-            </article>
-            <article class="menu-item" data-group="classiques">
-              <span class="item-type">California</span>
-              <h3>Avocat Mangue Concombre x6</h3>
-              <p>Les classiques gardent une lecture courte, utile sur mobile et en click & collect.</p>
-            </article>
-            <article class="menu-item" data-group="classiques">
-              <span class="item-type">California</span>
-              <h3>Thon Cuit Avocat Fromage x6</h3>
-              <p>Une fiche claire pour retrouver vite les recettes familieres.</p>
-            </article>
-            <article class="menu-item" data-group="boxs">
-              <span class="item-type">Box</span>
-              <h3>Petite, moyenne ou grande</h3>
-              <p>Le choix de la taille devient une porte d'entree visible vers la commande.</p>
-            </article>
-            <article class="menu-item" data-group="boxs">
-              <span class="item-type">Composition</span>
-              <h3>Sushis a la piece</h3>
-              <p>La composition guide le client avant le catalogue complet.</p>
-            </article>
-          </div>
+
+          <aside class="cart-panel" aria-labelledby="cart-title" data-cart-panel>
+            <div class="cart-header">
+              <div>
+                <span class="cart-kicker">Commande locale</span>
+                <h3 id="cart-title">Panier click&collect</h3>
+              </div>
+              <span class="cart-count" data-cart-count>0 article</span>
+            </div>
+            <p class="cart-empty" data-cart-empty>
+              Ajoutez des produits pour composer une selection de retrait.
+            </p>
+            <div class="cart-items" data-cart-items aria-live="polite"></div>
+            <div class="cart-summary">
+              <div>
+                <span>Sous-total</span>
+                <strong data-cart-total>0,00 &euro;</strong>
+              </div>
+              <p>Commande click&collect, sans paiement en ligne. Paiement au retrait.</p>
+              <button class="button button-primary cart-prepare" type="button" data-cart-prepare disabled>
+                Preparer ma selection
+              </button>
+              <p class="cart-status" data-cart-status aria-live="polite"></p>
+            </div>
+          </aside>
         </div>
       </section>
 
