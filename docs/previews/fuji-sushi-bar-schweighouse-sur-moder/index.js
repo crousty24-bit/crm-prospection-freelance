@@ -10,6 +10,7 @@ const cartCount = document.querySelector("[data-cart-count]");
 const cartTotal = document.querySelector("[data-cart-total]");
 const cartPrepare = document.querySelector("[data-cart-prepare]");
 const cartStatus = document.querySelector("[data-cart-status]");
+let headerSentinel;
 
 const priceFormatter = new Intl.NumberFormat("fr-FR", {
   style: "currency",
@@ -30,10 +31,6 @@ const products = new Map(
 );
 
 const cart = new Map();
-
-function syncHeader() {
-  header?.classList.toggle("is-scrolled", window.scrollY > 16);
-}
 
 function closeNav() {
   nav?.classList.remove("is-open");
@@ -196,5 +193,18 @@ const sectionObserver = new IntersectionObserver(
   if (section) sectionObserver.observe(section);
 });
 
-syncHeader();
-window.addEventListener("scroll", syncHeader, { passive: true });
+if (header && "IntersectionObserver" in window) {
+  headerSentinel = document.createElement("span");
+  headerSentinel.setAttribute("aria-hidden", "true");
+  headerSentinel.className = "header-sentinel";
+  document.body.prepend(headerSentinel);
+
+  const headerObserver = new IntersectionObserver(
+    ([entry]) => {
+      header.classList.toggle("is-scrolled", !entry.isIntersecting);
+    },
+    { rootMargin: "-16px 0px 0px 0px", threshold: 0 },
+  );
+
+  headerObserver.observe(headerSentinel);
+}
