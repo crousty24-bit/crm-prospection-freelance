@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fuji Sushi Bar - Preview refonte</title>
+    <meta
+      name="description"
+      content="Preview statique de refonte pour Fuji Sushi Bar a Schweighouse-sur-Moder : carte, box, horaires et contact."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Fuji Sushi Bar">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Fuji</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="navigation" class="site-nav" data-nav>
+        <a href="#concept">Concept</a>
+        <a href="#carte">Carte</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-action" href="https://fujisushibar.fr/collections/all">Commander</a>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero" aria-labelledby="hero-title">
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="eyebrow">Schweighouse-sur-Moder</p>
+            <h1 id="hero-title">Fuji Sushi Bar</h1>
+            <p class="hero-text">
+              Une vitrine plus nette pour commander vite : signatures, box composees et informations
+              pratiques accessibles des l'arrivee.
+            </p>
+            <div class="hero-actions" aria-label="Actions principales">
+              <a class="button button-primary" href="https://fujisushibar.fr/collections/all">Voir la carte</a>
+              <a class="button button-secondary" href="#horaires">Horaires & contact</a>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img
+              src="./assets/hero-sushi.png"
+              alt="Assortiment de sushis sur fond noir"
+              width="1672"
+              height="941"
+            >
+            <figcaption>Signatures, classiques et box composees</figcaption>
+          </figure>
+
+          <div class="hero-strip" aria-label="Informations pratiques">
+            <span>19 rue du General de Gaulle</span>
+            <span>07 88 42 15 01</span>
+            <span>Midi & soir selon horaires</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="concept" class="section section-intro" aria-labelledby="concept-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Concept</p>
+          <h2 id="concept-title">Composer une box devient le parcours principal.</h2>
+        </div>
+        <div class="intro-panel">
+          <p>
+            Le principe Fuji reste simple : choisir une petite, moyenne ou grande box, puis composer
+            a la piece parmi une gamme de sushis frais.
+          </p>
+          <p>
+            La refonte met ce choix au premier plan avec une lecture plus rapide sur mobile et une
+            carte organisee pour commander sans chercher.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature-band" aria-label="Mise en avant du concept de box">
+        <img
+          class="feature-image"
+          src="./assets/sushi-box.png"
+          alt="Box de sushis dans une presentation sombre"
+          width="1122"
+          height="1402"
+        >
+        <div class="feature-copy">
+          <p class="eyebrow">A la piece</p>
+          <h2>Petite, moyenne ou grande box.</h2>
+          <div class="steps" aria-label="Parcours de commande">
+            <span>01 Choisir la taille</span>
+            <span>02 Ajouter les pieces</span>
+            <span>03 Recuperer ou se faire livrer</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="carte" class="section section-menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <p class="eyebrow">Carte</p>
+          <h2 id="menu-title">Une carte lisible, pensee pour declencher la commande.</h2>
+        </div>
+        <div class="menu-layout">
+          <div class="category-panel" aria-label="Categories principales">
+            <button class="category-button is-active" type="button" data-category="signatures">Signatures</button>
+            <button class="category-button" type="button" data-category="classiques">Classiques</button>
+            <button class="category-button" type="button" data-category="boxs">Boxs</button>
+          </div>
+          <div class="menu-list" data-menu-list>
+            <article class="menu-item" data-group="signatures">
+              <span class="item-type">Signature</span>
+              <h3>I CREATION Crevette x8</h3>
+              <p>Une entree premium pour valoriser les creations Fuji des l'ouverture de la carte.</p>
+            </article>
+            <article class="menu-item is-premium" data-group="signatures">
+              <span class="item-type">Signature</span>
+              <h3>I Ebi Teriyaki Roll x6</h3>
+              <p>Un roll signature mis en scene comme un choix chef, rapide a identifier.</p>
+            </article>
+            <article class="menu-item" data-group="classiques">
+              <span class="item-type">California</span>
+              <h3>Avocat Mangue Concombre x6</h3>
+              <p>Les classiques gardent une lecture courte, utile sur mobile et en click & collect.</p>
+            </article>
+            <article class="menu-item" data-group="classiques">
+              <span class="item-type">California</span>
+              <h3>Thon Cuit Avocat Fromage x6</h3>
+              <p>Une fiche claire pour retrouver vite les recettes familieres.</p>
+            </article>
+            <article class="menu-item" data-group="boxs">
+              <span class="item-type">Box</span>
+              <h3>Petite, moyenne ou grande</h3>
+              <p>Le choix de la taille devient une porte d'entree visible vers la commande.</p>
+            </article>
+            <article class="menu-item" data-group="boxs">
+              <span class="item-type">Composition</span>
+              <h3>Sushis a la piece</h3>
+              <p>La composition guide le client avant le catalogue complet.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-values" aria-labelledby="values-title">
+        <div class="section-heading">
+          <p class="eyebrow">Qualite</p>
+          <h2 id="values-title">Les engagements deviennent des preuves simples a scanner.</h2>
+        </div>
+        <div class="values-list">
+          <article>
+            <span>01</span>
+            <h3>Poisson Label Rouge</h3>
+            <p>Poisson en provenance d'Ecosse et legumes frais.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Suivi HACCP Octopus</h3>
+            <p>Tracabilite, temperature et fraicheur suivies en production.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Serviettes Te Moana</h3>
+            <p>Serviettes reutilisables fabriquees a la main en Alsace.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Electricite verte</h3>
+            <p>Engagement mentionne sur le site actuel de Fuji.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="horaires" class="section section-hours" aria-labelledby="hours-title">
+        <div class="section-heading">
+          <p class="eyebrow">Horaires</p>
+          <h2 id="hours-title">Ouvert midi et soir, sauf jours de fermeture.</h2>
+        </div>
+        <div class="hours-table" role="table" aria-label="Horaires Fuji Sushi Bar">
+          <div class="hours-row hours-head" role="row">
+            <span role="columnheader">Jour</span>
+            <span role="columnheader">Midi</span>
+            <span role="columnheader">Soir</span>
+          </div>
+          <div class="hours-row" role="row"><span>Lundi</span><span>11:30 - 13:30</span><span>17:00 - 21:00</span></div>
+          <div class="hours-row" role="row"><span>Mardi</span><span>11:30 - 13:30</span><span>17:00 - 21:00</span></div>
+          <div class="hours-row" role="row"><span>Mercredi</span><span>11:30 - 13:30</span><span>17:00 - 21:00</span></div>
+          <div class="hours-row is-closed" role="row"><span>Jeudi</span><span>Ferme</span><span>Ferme</span></div>
+          <div class="hours-row" role="row"><span>Vendredi</span><span>11:30 - 13:30</span><span>17:00 - 21:00</span></div>
+          <div class="hours-row" role="row"><span>Samedi</span><span>11:30 - 13:30</span><span>17:00 - 21:00</span></div>
+          <div class="hours-row" role="row"><span>Dimanche</span><span>Ferme</span><span>17:00 - 21:00</span></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Fuji Schweighouse</h2>
+          <address>
+            19 rue du General de Gaulle<br>
+            67590 Schweighouse-sur-Moder
+          </address>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="tel:+33788421501">Appeler</a>
+          <a class="button button-secondary" href="mailto:fuji.schweighouse@gmail.com">Email</a>
+          <a class="button button-ghost" href="https://www.instagram.com/fuji.sushibar/">Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Fuji Sushi Bar</span>
+      <a href="https://fujisushibar.fr/">Site actuel</a>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
