@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#050505">
+    <title>Take Your Gloves - Preview experiences premium</title>
+    <meta
+      name="description"
+      content="Preview statique pour Take Your Gloves : road trips, journees circuit et evenements premium pour proprietaires de sportives et voitures de collection."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"%3E%3Crect width="120" height="120" fill="%23050505"/%3E%3Ctext x="60" y="69" text-anchor="middle" font-family="serif" font-size="34" font-weight="700" fill="%23C5A059"%3ETYG%3C/text%3E%3C/svg%3E' type="image/svg+xml">
+    <link rel="preload" href="./assets/hero-grand-tour-optimized.jpg" as="image">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Take Your Gloves">
+        <span class="brand-primary">Take</span>
+        <span class="brand-secondary">Your Gloves</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+        data-nav-toggle
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav id="navigation" class="site-nav" aria-label="Navigation principale" data-nav>
+        <a href="#formats">Experiences</a>
+        <a href="#organisation">Organisation</a>
+        <a href="#plaisir">Plaisir</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">Take Your Gloves</a>
+    </header>
+
+    <main id="main">
+      <section id="accueil" class="hero reveal-section" aria-labelledby="hero-title" data-reveal-section>
+        <img
+          class="hero-bg"
+          src="./assets/hero-grand-tour-optimized.jpg"
+          alt=""
+          width="2560"
+          height="1430"
+          fetchpriority="high"
+          aria-hidden="true"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <p class="eyebrow">Pour proprietaires de sportives et collections</p>
+          <h1 id="hero-title">Profitez de votre voiture, on organise le reste</h1>
+          <p class="hero-text">
+            Road trips, circuits et rencontres entre passionnes, organises de A a Z dans un cadre haut de gamme.
+          </p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button button-primary" href="#contact">
+              <span>Take Your Gloves</span>
+            </a>
+            <a class="button button-secondary" href="#formats">
+              <span>Explorer les formats</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip reveal-section" aria-label="Cadre de la preview" data-reveal-section>
+        <div class="proof-inner">
+          <span class="proof-item">
+            <img class="proof-icon" src="./assets/icon-sportive.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="proof-label">Proprietaires de sportives</span>
+          </span>
+          <span class="proof-item">
+            <img class="proof-icon" src="./assets/icon-collection.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="proof-label">Vehicules de collection</span>
+          </span>
+          <span class="proof-item">
+            <img class="proof-icon" src="./assets/icon-route.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="proof-label">Road trips et circuits</span>
+          </span>
+          <span class="proof-item">
+            <img class="proof-icon" src="./assets/icon-organisation.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="proof-label">Organisation de A a Z</span>
+          </span>
+        </div>
+      </section>
+
+      <section id="formats" class="section formats reveal-section" aria-labelledby="formats-title" data-reveal-section>
+        <div class="section-copy">
+          <p class="section-kicker">Formats</p>
+          <h2 id="formats-title">Chaque sortie devient une experience partagee.</h2>
+          <p>
+            Take Your Gloves imagine des formats haut de gamme pour rouler,
+            rencontrer d'autres passionnes et profiter pleinement de sa voiture.
+          </p>
+        </div>
+
+        <div class="format-grid">
+          <article class="format-card format-card-large" data-reveal-item>
+            <span class="card-index">Road trip</span>
+            <h3>Road trips prives</h3>
+            <p>
+              Parcours, haltes, rythme et accueil sont prepares pour que les proprietaires
+              se concentrent uniquement sur la conduite.
+            </p>
+          </article>
+
+          <article class="format-card" data-reveal-item>
+            <span class="card-index">Circuit</span>
+            <h3>Journees sur circuit</h3>
+            <p>
+              Une journee encadree pour explorer les capacites de sa voiture dans un cadre organise.
+            </p>
+          </article>
+
+          <article class="format-card" data-reveal-item>
+            <span class="card-index">Passion</span>
+            <h3>Rencontres entre passionnes</h3>
+            <p>
+              Des moments pour echanger avec des proprietaires qui partagent la meme culture automobile.
+            </p>
+          </article>
+
+          <article class="format-card format-card-dark" data-reveal-item>
+            <span class="card-index">Prive</span>
+            <h3>Evenements automobiles prives</h3>
+            <p>
+              Accueil, lieu, deroule et coordination terrain sont geres de A a Z.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="organisation" class="section journey reveal-section" aria-labelledby="journey-title" data-reveal-section>
+        <div class="journey-heading">
+          <div class="journey-heading-inner">
+            <h2 id="journey-title">Une organisation complete, du brief au dernier virage.</h2>
+            <p>
+              Le proprietaire garde le plaisir de conduire. Take Your Gloves gere le cadre,
+              le parcours, l'accueil et le deroule.
+            </p>
+            <figure class="journey-visual">
+              <img
+                src="./assets/organisation-route-brief.jpg"
+                alt="Preparation d'un itineraire automobile premium avec gants de conduite et voitures de collection en arriere-plan"
+                width="1600"
+                height="1000"
+                loading="lazy"
+              >
+            </figure>
+          </div>
+        </div>
+
+        <div class="journey-list">
+          <article data-reveal-item>
+            <span>Brief proprietaire</span>
+            <h3>Comprendre la voiture, le groupe et l'envie</h3>
+            <p>Le format part du vehicule, du niveau d'experience et du type de moment recherche.</p>
+          </article>
+          <article data-reveal-item>
+            <span>Trace et rythme</span>
+            <h3>Construire une route ou une journee coherente</h3>
+            <p>Le parcours, les arrets et les temps forts sont organises pour rester fluides.</p>
+          </article>
+          <article data-reveal-item>
+            <span>Encadrement</span>
+            <h3>Gerer l'accueil, le timing et la coordination</h3>
+            <p>L'experience reste haut de gamme parce que les details pratiques sont anticipes.</p>
+          </article>
+          <article data-reveal-item>
+            <span>Experience</span>
+            <h3>Profiter de la voiture et des passionnes presents</h3>
+            <p>Le jour J doit laisser de la place a la conduite, aux rencontres et au plaisir.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="plaisir" class="editorial reveal-section" aria-labelledby="editorial-title" data-reveal-section>
+        <figure class="editorial-media" data-reveal-item>
+          <img
+            src="./assets/interior-detail-optimized.jpg"
+            alt="Detail d'un interieur automobile premium"
+            width="1920"
+            height="1072"
+            loading="lazy"
+          >
+        </figure>
+
+        <div class="editorial-copy" data-reveal-item>
+          <h2 id="editorial-title">Le plaisir automobile retrouve son cadre.</h2>
+          <p>
+            Take Your Gloves ne vend pas seulement une sortie. La prestation transforme
+            une voiture personnelle en moment partage, fluide et soigne.
+          </p>
+          <div class="deliverables" aria-label="Elements de l'experience">
+            <span>Itineraire</span>
+            <span>Circuit</span>
+            <span>Rencontres</span>
+            <span>Coordination</span>
+            <span>Accueil premium</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust reveal-section" aria-labelledby="trust-title" data-reveal-section>
+        <div class="trust-panel" data-reveal-item>
+          <h2 id="trust-title">Une prestation claire, sans promesse inventee.</h2>
+          <p>
+            La preview met en avant une methode et une promesse d'organisation, sans afficher
+            de donnees commerciales non verifiees.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <article data-reveal-item>
+            <h3>Cadre clair</h3>
+            <p>Format, vehicule, niveau de conduite et contraintes sont poses avant la proposition.</p>
+          </article>
+          <article data-reveal-item>
+            <h3>Organisation complete</h3>
+            <p>L'offre met l'accent sur la preparation et la coordination de A a Z.</p>
+          </article>
+          <article data-reveal-item>
+            <h3>Experience adaptee</h3>
+            <p>Sportives, collections, clubs ou groupes d'amis peuvent avoir un format dedie.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact reveal-section" aria-labelledby="contact-title" data-reveal-section>
+        <div class="contact-copy" data-reveal-item>
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Preparer une experience sans declencher d'envoi.</h2>
+          <p>
+            Ce formulaire simule la prise de contact pour la preview. Il ne transmet aucune donnee.
+          </p>
+        </div>
+
+        <form class="contact-form" action="#" method="post" data-contact-form data-reveal-item>
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" spellcheck="false">
+          </div>
+
+          <div class="field">
+            <label for="phone">Telephone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+          </div>
+
+          <div class="field">
+            <label for="audience">Audience</label>
+            <select id="audience" name="audience" autocomplete="off">
+              <option value="">Choisir</option>
+              <option>Proprietaire</option>
+              <option>Groupe d'amis</option>
+              <option>Club automobile</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="format">Format souhaite</label>
+            <select id="format" name="format" autocomplete="off">
+              <option value="">Choisir</option>
+              <option>Road trip</option>
+              <option>Journee circuit</option>
+              <option>Rencontre passionnes</option>
+              <option>Evenement prive</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="event-date">Date indicative</label>
+            <input id="event-date" name="event-date" type="date" autocomplete="off">
+          </div>
+
+          <div class="field field-wide">
+            <label for="vehicle">Vehicule</label>
+            <input id="vehicle" name="vehicle" type="text" autocomplete="off">
+          </div>
+
+          <div class="field field-wide">
+            <label for="region">Lieu ou region</label>
+            <input id="region" name="region" type="text" autocomplete="address-level2">
+          </div>
+
+          <div class="field field-wide">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" autocomplete="off"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Preparer le brief</button>
+            <p class="form-status" aria-live="polite" data-form-status></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#accueil" aria-label="Take Your Gloves">
+        <span class="brand-primary">Take</span>
+        <span class="brand-secondary">Your Gloves</span>
+      </a>
+      <p>Preview statique - aucun formulaire n'est envoye.</p>
+    </footer>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>

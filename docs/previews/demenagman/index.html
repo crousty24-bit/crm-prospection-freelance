@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demenag'Man - Preview landing page</title>
+    <meta
+      name="description"
+      content="Preview statique pour Demenag'Man, service de demenagement, debarras, montage de meubles et transport fragile a Strasbourg."
+    >
+    <meta name="theme-color" content="#f7fafc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="./assets/logo-demenagman.jpg">
+    <link rel="preload" as="image" href="./assets/hero-demenagement.webp">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Demenag'Man accueil">
+        <img src="./assets/logo-demenagman.jpg" alt="" width="64" height="64">
+        <span>Demenag'Man</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+        data-nav-toggle
+      >
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <nav id="navigation" class="site-nav" data-nav aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#avis">Avis</a>
+        <a href="#apropos">A propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-action" href="#contact">Devis offert</a>
+    </header>
+
+    <main id="contenu">
+      <section id="accueil" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="./assets/hero-demenagement.webp"
+          alt="Camion de demenagement bleu charge avec soin dans une rue residentielle"
+          width="1672"
+          height="941"
+          fetchpriority="high"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-inner reveal is-visible" data-reveal>
+          <p class="eyebrow">Demenagement a Strasbourg et partout en France</p>
+          <h1 id="hero-title">Demenager avec methode</h1>
+          <p class="hero-text">
+            Devis offert, intervention a domicile, equipe organisee pour particuliers et professionnels.
+          </p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button button-primary" href="#contact">
+              <span>Devis offert</span>
+              <span class="button-icon" aria-hidden="true">-></span>
+            </a>
+            <a class="button button-secondary" href="#services">Voir les services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip reveal is-visible" aria-label="Engagements principaux" data-reveal>
+        <div class="proof-item">
+          <strong>20m3</strong>
+          <span>Camion grand volume</span>
+        </div>
+        <div class="proof-item">
+          <strong>France</strong>
+          <span>Toutes distances</span>
+        </div>
+        <div class="proof-item">
+          <strong>Pro & perso</strong>
+          <span>Particuliers et entreprises</span>
+        </div>
+        <div class="proof-item">
+          <strong>Domicile</strong>
+          <span>Intervention sur place</span>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section" aria-labelledby="services-title">
+        <div class="section-heading reveal" data-reveal>
+          <h2 id="services-title">Un service clair pour chaque volume.</h2>
+          <p>
+            Demenagement, debarras, meubles ou objets fragiles: la page met chaque demande sur un chemin de devis lisible.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card service-card-large reveal" data-reveal>
+            <span class="service-kicker">Demenagement</span>
+            <h3>Demenagement toutes distances</h3>
+            <p>
+              Camion 20m3, chargement securise et equipe experimentee pour organiser les trajets a Strasbourg comme partout en France.
+            </p>
+            <ul>
+              <li>Protection des biens avant chargement</li>
+              <li>Organisation pour particuliers et professionnels</li>
+              <li>Devis offert avant intervention</li>
+            </ul>
+            <a class="text-link" href="#contact">Devis offert</a>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <span class="service-kicker">Debarras</span>
+            <h3>Encombrants sans attente</h3>
+            <p>
+              Debarras rapide pour appartements, caves et greniers, avec tri et transport vers la dechetterie inclus.
+            </p>
+            <a class="text-link" href="#contact">Devis offert</a>
+          </article>
+
+          <article class="service-card service-card-blue reveal" data-reveal>
+            <span class="service-kicker">Meubles</span>
+            <h3>Montage et demontage</h3>
+            <p>
+              Demontage methodique, transport protege et remontage des meubles pour limiter les imprevus le jour du depart.
+            </p>
+            <a class="text-link text-link-light" href="#contact">Devis offert</a>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <span class="service-kicker">Transport</span>
+            <h3>Dechetterie incluse</h3>
+            <p>
+              Les objets a evacuer peuvent etre pris en charge dans le meme parcours, avec une approche de tri plus responsable.
+            </p>
+            <a class="text-link" href="#contact">Devis offert</a>
+          </article>
+
+          <article class="service-card service-card-wide reveal" data-reveal>
+            <span class="service-kicker">Fragile</span>
+            <h3>Piano, objet fragile et luxe</h3>
+            <p>
+              Une demande specifique pour les objets qui exigent plus de preparation: piano, mobilier fragile, pieces lourdes ou de valeur.
+            </p>
+            <a class="text-link" href="#contact">Devis offert</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="avis" class="section reviews-section" aria-labelledby="reviews-title">
+        <div class="reviews-panel reveal" data-reveal>
+          <div class="reviews-copy">
+            <h2 id="reviews-title">Avis clients</h2>
+            <p>
+              Cette zone est prete pour afficher des retours verifies, sans inventer de notes, de noms ou de volumes traites.
+            </p>
+          </div>
+          <div class="review-slots" aria-label="Emplacements d'avis verifies">
+            <article class="review-slot">
+              <span>Avis verifie a integrer</span>
+              <p>Texte court, source et attribution a ajouter uniquement apres validation.</p>
+            </article>
+            <article class="review-slot">
+              <span>Avis verifie a integrer</span>
+              <p>Le format reste volontairement reserve tant que les preuves ne sont pas disponibles.</p>
+            </article>
+            <article class="review-slot">
+              <span>Avis verifie a integrer</span>
+              <p>Aucune note publique ou identite client n'est affichee sans source.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="apropos" class="section about-section" aria-labelledby="about-title">
+        <div class="about-media reveal" data-reveal aria-hidden="true">
+          <img src="./assets/logo-demenagman.jpg" alt="" width="512" height="512" loading="lazy">
+        </div>
+        <div class="about-copy reveal" data-reveal>
+          <h2 id="about-title">Une presence locale, une logistique simple.</h2>
+          <p>
+            La preview presente Demenag'Man comme un service de demenagement base a Strasbourg, oriente preparation, protection et suivi clair.
+          </p>
+          <div class="about-list">
+            <div>
+              <strong>Pour les particuliers</strong>
+              <span>Demenagement, debarras et meubles a organiser sans multiplier les interlocuteurs.</span>
+            </div>
+            <div>
+              <strong>Pour les professionnels</strong>
+              <span>Transport, volumes et objets sensibles presentes dans un parcours de demande direct.</span>
+            </div>
+            <div>
+              <strong>Approche responsable</strong>
+              <span>Tri, trajets optimises et transport dechetterie exprimes sans promesse non verifiee.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="contact-intro reveal" data-reveal>
+          <h2 id="contact-title">Preparer un devis offert.</h2>
+          <p>
+            Le formulaire reste local dans cette preview. Il montre le parcours attendu sans envoyer de demande.
+          </p>
+          <div class="contact-cues" aria-label="Rappels de service">
+            <span>Intervention a domicile</span>
+            <span>Strasbourg et France entiere</span>
+            <span>Professionnels et particuliers</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form data-reveal novalidate>
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error" required>
+            <p id="name-error" class="field-error" data-error-for="name"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              spellcheck="false"
+              aria-describedby="email-error"
+              required
+            >
+            <p id="email-error" class="field-error" data-error-for="email"></p>
+          </div>
+          <div class="field">
+            <label for="phone">Telephone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="service">Type de demande</label>
+            <select id="service" name="service" aria-describedby="service-error" required>
+              <option value="">Choisir un service</option>
+              <option>Demenagement</option>
+              <option>Debarras</option>
+              <option>Meubles</option>
+              <option>Piano / fragile</option>
+              <option>Autre</option>
+            </select>
+            <p id="service-error" class="field-error" data-error-for="service"></p>
+          </div>
+          <div class="field">
+            <label for="from">Depart</label>
+            <input id="from" name="from" type="text" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="to">Arrivee</label>
+            <input id="to" name="to" type="text" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="date">Date souhaitee</label>
+            <input id="date" name="date" type="date">
+          </div>
+          <div class="field field-full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <div class="form-footer">
+            <button class="button button-primary" type="submit">
+              <span>Preparer la demande</span>
+              <span class="button-icon" aria-hidden="true">-></span>
+            </button>
+            <p data-form-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#accueil" aria-label="Demenag'Man accueil">
+        <img src="./assets/logo-demenagman.jpg" alt="" width="64" height="64" loading="lazy">
+        <span>Demenag'Man</span>
+      </a>
+      <p>
+        Preview statique pour une landing page de demenagement, debarras et transport fragile.
+      </p>
+      <nav aria-label="Navigation pied de page">
+        <a href="#services">Services</a>
+        <a href="#avis">Avis</a>
+        <a href="#apropos">A propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
