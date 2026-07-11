@@ -30,12 +30,13 @@ Local note: the MCP `download_assets` call reported success to `tmp/stitch-auto-
 
 Image implementation note:
 
-- Original generated JPG assets were `512 x 286`, which was too small for a full-screen hero and large editorial cards.
-- Browser-facing assets use locally optimized variants:
-  - `hero-grand-tour-optimized.jpg`, `2560 x 1430`.
-  - `interior-detail-optimized.jpg`, `1920 x 1072`.
-  - `organisation-route-brief.jpg`, `1600 x 1000`, generated image for the organization section.
-- The original JPG files remain in `assets/` as source references.
+- The previous JPG files came from `512 x 286` sources and remained visibly pixelated after enlargement.
+- The three photographs were regenerated at their native display ratios, then exported directly to high-quality WebP without enlargement:
+  - `hero-grand-tour.webp`, `1672 x 941`, composed as a full-bleed 16:9 hero with copy space and the car in the lower-right third.
+  - `interior-detail.webp`, `1672 x 941`, composed for the 16:9 editorial frame.
+  - `organisation-route-brief.webp`, `1586 x 992`, composed for the 16:10 organization frame.
+- SVG remains reserved for interface icons. WebP is used for photographs because it preserves photographic detail at a lower transfer weight than PNG.
+- Obsolete JPG sources and the unused Stitch logo were removed from the public assets directory.
 
 ## Current Preview Direction
 
@@ -72,10 +73,11 @@ Implementation direction:
 
 Required sections:
 
-- Header with `Take Your Gloves` lockup, compact navigation, and `Take Your Gloves` CTA.
+- Header with `Take Your Gloves` lockup, compact navigation, and `Demander un devis` CTA.
 - Hero with owner-focused premium automotive promise.
 - Proof strip with safe, non-metric positioning.
 - Experience formats: road trips, track days, enthusiast meetings, private automotive events.
+- Three explicitly fictional testimonial examples between experience formats and organization.
 - Organization journey: owner brief, route and rhythm, supervision, day-of experience.
 - Image-led editorial section about rediscovering the pleasure of using the car.
 - Trust section without fabricated metrics.
@@ -94,8 +96,8 @@ Goal: make the grand tour hero visual visible while keeping the dark premium Sti
 
 Implementation:
 
-- Full-bleed hero, centered text, editorial Stitch rhythm.
-- `.hero-bg` should render at full opacity and use the optimized high-resolution asset.
+- Full-bleed hero, left-aligned text in the image's intentional negative space, editorial Stitch rhythm.
+- `.hero-bg` should render at full opacity and use the native-ratio WebP asset.
 - Dark overlay remains, but scrims should stay light enough that Chrome and Firefox both show the vehicle image clearly.
 - Text readability should come from the scrim plus subtle text shadow, not from making the full image opaque black.
 - Keep next section close enough that the page does not feel like an isolated splash screen.
@@ -121,7 +123,7 @@ Proof strip:
 
 - Left: `Take Your Gloves` typographic lockup.
 - Nav labels: `Experiences`, `Organisation`, `Plaisir`, `Contact`.
-- Header CTA: `Take Your Gloves`.
+- Header CTA: `Demander un devis`.
 - Mobile menu opens as a dark full-screen panel below the fixed header.
 
 ### Experience Formats
@@ -144,13 +146,20 @@ Steps:
 
 Visual:
 
-- Add `organisation-route-brief.jpg` below the organization heading and intro copy.
+- Add `organisation-route-brief.webp` below the organization heading and intro copy.
 - On desktop and tablet, keep the heading and image inside the same sticky left column while the process list scrolls.
 - On narrow mobile, keep the same content order but allow normal document flow so the image does not block the viewport.
 
+### Testimonials
+
+- Place the section between experience formats and organization.
+- Show exactly three clearly delimited cards in one row on desktop and one column on mobile.
+- Keep every quote short enough to read at a glance.
+- Label the testimonials as fictional examples so the public preview cannot be mistaken for verified customer proof.
+
 ### Editorial Section
 
-Use `assets/interior-detail-optimized.jpg` for craft and intimacy.
+Use `assets/interior-detail.webp` for craft and intimacy.
 
 Message:
 
