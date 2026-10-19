@@ -67,9 +67,9 @@ if (!reduceMotion) {
   });
 }
 
-// Parallax (hero + interlude), as in the Stitch export
+// Parallax (hero + section backgrounds), as in the Stitch export
 const heroBg = document.querySelector('[data-parallax]');
-const interludeBg = document.querySelector('[data-parallax-section]');
+const sectionBgs = Array.from(document.querySelectorAll('[data-parallax-section]'));
 let ticking = false;
 
 const updateParallax = () => {
@@ -78,14 +78,14 @@ const updateParallax = () => {
   if (heroBg && y < window.innerHeight * 1.2) {
     heroBg.style.transform = `translate3d(0, ${y * Number(heroBg.dataset.parallax)}px, 0)`;
   }
-  if (interludeBg) {
-    const rect = interludeBg.parentElement.getBoundingClientRect();
+  sectionBgs.forEach((bg) => {
+    const rect = bg.parentElement.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) {
-      const limit = rect.height * 0.2;
+      const limit = rect.height * 0.15;
       const offset = Math.max(-limit, Math.min(limit, (rect.top + rect.height / 2 - window.innerHeight / 2) * 0.25));
-      interludeBg.style.transform = `translate3d(0, ${offset}px, 0)`;
+      bg.style.transform = `translate3d(0, ${offset}px, 0)`;
     }
-  }
+  });
 };
 
 const onScroll = () => {
@@ -97,6 +97,25 @@ const onScroll = () => {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
+
+// Contact page: preselect the category from ?sujet= and count characters
+const subject = document.querySelector('[data-subject]');
+const wanted = new URLSearchParams(window.location.search).get('sujet');
+if (subject && wanted && subject.querySelector(`option[value="${CSS.escape(wanted)}"]`)) {
+  subject.value = wanted;
+}
+
+const counter = document.querySelector('[data-counter]');
+const counted = counter?.closest('.field')?.querySelector('textarea');
+if (counter && counted) {
+  const max = Number(counted.getAttribute('maxlength'));
+  const update = () => {
+    counter.textContent = `${counted.value.length} / ${max}`;
+    counter.classList.toggle('is-high', counted.value.length >= max * 0.9);
+  };
+  counted.addEventListener('input', update);
+  counted.form?.addEventListener('reset', () => requestAnimationFrame(update));
+}
 
 // Demo form: validated locally, nothing is sent or stored
 const demoForm = document.querySelector('[data-demo-form]');

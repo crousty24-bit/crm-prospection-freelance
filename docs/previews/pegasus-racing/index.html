@@ -5,36 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#091D35">
     <meta name="robots" content="noindex">
-    <meta name="description" content="Preview de refonte pour Pegasus Racing : page Event, événements et expériences automobiles. Concept visuel non contractuel.">
-    <title>Event — Pegasus Racing</title>
+    <meta name="description" content="Preview de refonte pour Pegasus Racing : team de compétition automobile et atelier à Geispolsheim. Concept non contractuel.">
+    <title>Pegasus Racing — Team de compétition & atelier</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,call,check_circle,construction,expand_more,forum,location_on,mail,route,send,sports_score,verified&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=alternate_email,analytics,arrow_downward,arrow_forward,build,call,check_circle,construction,corporate_fare,directions_car,done,engineering,expand_more,flag,flight,forum,groups,insights,local_shipping,location_on,lock,mail,military_tech,monitor_heart,navigation,pin_drop,route,school,send,speed,sports_motorsports,sports_score,timer,train,tune,verified,verified_user&display=block" rel="stylesheet">
     <link rel="preload" href="./assets/hero.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body data-page="accueil">
     <a class="skip-link" href="#main">Aller au contenu</a>
 
     <header class="site-header" data-header>
       <div class="header-inner wrap">
-        <a class="brand" href="#top" aria-label="Pegasus Racing, retour en haut">
+        <a class="brand" href="index.html" aria-label="Pegasus Racing, accueil">
           <img src="./assets/logo-pegasus.png" alt="" width="226" height="118">
           <span class="brand-name"><strong>Pegasus</strong><small>Racing</small></span>
         </a>
 
         <nav class="main-nav" id="main-nav" aria-label="Navigation principale" data-menu>
-          <a href="#top">Accueil</a>
-          <span class="nav-off" title="Page non incluse dans cette preview">Racing</span>
-          <span class="nav-off" title="Page non incluse dans cette preview">Trackday</span>
-          <a href="#top" aria-current="page">Event</a>
-          <a href="#contact-event">Contact</a>
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="racing.html">Racing</a>
+          <a href="trackday.html">Trackday</a>
+          <a href="event.html">Event</a>
+          <a href="contact.html">Contact</a>
         </nav>
 
         <div class="header-actions">
-          <a class="btn btn-primary btn-sm header-cta" href="#contact-event"><span>Nous contacter</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
+          <a class="btn btn-primary btn-sm header-cta" href="contact.html"><span>Nous contacter</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
           <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
         </div>
       </div>
@@ -42,223 +42,193 @@
 
     <main id="main">
       <!-- HERO -->
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-bg" data-parallax="0.35" aria-hidden="true"><img src="./assets/hero.webp" alt="" width="1672" height="941" fetchpriority="high"></div>
+      <section class="hero-full" id="top" aria-labelledby="hero-title">
+        <div class="hero-bg" data-parallax="0.25" aria-hidden="true"><img src="./assets/hero.webp" alt="" width="1672" height="941" fetchpriority="high"></div>
         <div class="hero-scrim" aria-hidden="true"></div>
-        <div class="hero-content wrap" data-reveal>
-          <div class="chip-row" data-reveal-item>
-            <span class="chip chip-live"><span class="dot dot-pulse"></span>Pegasus Event Experience</span>
-            <span class="mono-muted">Geispolsheim — Alsace // Circuits de France &amp; d'Europe</span>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-full-inner wrap" data-reveal>
+          <div class="hero-topbar" data-reveal-item>
+            <span class="chip chip-pill"><span class="dot dot-ping"></span>Alsace // Team de compétition // Endurance</span>
+            <span class="geo-box"><span class="c-cyan">24H du Mans ×4</span><span class="sep">|</span><span class="c-cyan">WEC</span><span class="sep">|</span><span class="c-white">Geispolsheim, FR</span></span>
           </div>
-          <h1 id="hero-title" data-reveal-item>L'automobile<br><span class="grad-text">se vit en grand.</span></h1>
-          <p class="hero-lead" data-reveal-item>Des événements et des expériences automobiles façonnés autour de votre passion. Le savoir-faire d'une écurie aux 4 participations aux 24 Heures du Mans, au service de vos invités.</p>
-          <div class="hero-ctas" data-reveal-item>
-            <a class="btn btn-primary btn-lg" href="#contact-event"><span>Parlons de votre événement</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
-            <a class="btn btn-glass btn-lg" href="#formats"><span>Découvrir nos formats</span><span class="icon" aria-hidden="true">expand_more</span></a>
+          <div class="hero-center">
+            <span class="chip-tag" data-reveal-item><span class="icon" aria-hidden="true">flag</span>Team de compétition &amp; atelier de précision</span>
+            <h1 id="hero-title" class="h-display" data-reveal-item>La performance <br><span class="grad-text">comme signature.</span></h1>
+            <p class="lead" data-reveal-item>Compétition automobile, trackdays et préparation de véhicules. Plus de 20 ans d'expérience en endurance internationale pour vous aider à prendre la bonne trajectoire.</p>
+            <div class="hero-ctas" data-reveal-item>
+              <a class="btn btn-primary btn-lg btn-glow" href="#poles"><span>Découvrir nos pôles</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
+              <a class="btn btn-ghost btn-lg" href="contact.html"><span>Nous contacter</span><span class="icon" aria-hidden="true">call</span></a>
+            </div>
           </div>
-
-          <dl class="telemetry" data-reveal-item>
-            <div class="tele tele-blue"><dt>Héritage compétition</dt><dd><strong>+<span data-count="20">20</span> ans</strong><span>Sur les circuits</span></dd></div>
-            <div class="tele tele-cyan"><dt>24H du Mans</dt><dd><strong class="c-cyan"><span data-count="4">4</span> participations</strong><span>Savoir-faire endurance</span></dd></div>
-            <div class="tele tele-white"><dt>Palmarès</dt><dd><strong>Titres européens</strong><span>Jusqu'au WEC en Asie</span></dd></div>
-            <div class="tele tele-red"><dt>Accompagnement</dt><dd><strong class="c-primary">Sur-mesure</strong><span>Projet par projet</span></dd></div>
-          </dl>
+          <div class="hero-stats" data-reveal-item>
+            <div class="hero-stats-grid">
+              <div><span class="stat">+<span data-count="20">20</span><small class="c-cyan">ans</small></span><span class="mono">Expérience compétition</span></div>
+              <div><span class="stat"><span data-count="4">4</span><small class="c-red">x</small></span><span class="mono">24 Heures du Mans</span></div>
+              <div><span class="stat"><span data-count="100">100</span><small class="c-cyan">+</small></span><span class="mono">Courses disputées</span></div>
+              <div><span class="stat">1<small class="c-primary">atelier</small></span><span class="mono">Préparation &amp; entretien</span></div>
+            </div>
+            <a class="scroll-cue" href="#histoire"><span class="mono">Défiler</span><span class="icon" aria-hidden="true">expand_more</span></a>
+          </div>
         </div>
       </section>
 
-      <!-- 01 SUR-MESURE & PRESTIGE -->
-      <section class="section s-navy edge" id="ecurie" aria-labelledby="s1-title" data-reveal>
-        <div class="wrap split">
-          <div class="split-text">
-            <p class="index index-red" data-reveal-item><span class="dot dot-ping"></span>/ 01 — Sur-mesure &amp; prestige</p>
-            <h2 id="s1-title" class="h-xl" data-reveal-item>Des événements <br><span class="c-tertiary">à votre image.</span></h2>
-            <p class="lead" data-reveal-item>Pegasus Racing dépasse la simple journée circuit pour imaginer une expérience où précision mécanique, adrénaline et accueil soigné avancent à l'unisson.</p>
-            <p class="body" data-reveal-item>Menée par Julien et Claude Schell, l'écurie accompagne depuis plus de 20 ans pilotes amateurs et confirmés, de l'atelier jusqu'à la grille de départ.</p>
-            <ul class="checklist" data-reveal-item>
-              <li><span class="icon" aria-hidden="true">verified</span>Plus de 20 ans d'expérience en compétition</li>
-              <li><span class="icon" aria-hidden="true">verified</span>Connaissance des circuits de France et d'Europe</li>
-              <li><span class="icon" aria-hidden="true">verified</span>Atelier de préparation et d'entretien intégré</li>
+      <!-- 01 HISTOIRE -->
+      <section class="section-lg s-lowest" id="histoire" aria-labelledby="h1-title">
+        <div class="split-grid-line" aria-hidden="true"></div>
+        <div class="wrap split-sticky" data-reveal>
+          <div>
+            <p class="index index-cyan" data-reveal-item>/ 01 — Histoire &amp; expertise</p>
+            <h2 id="h1-title" class="h-xl" data-reveal-item>Plus qu'une écurie.<br><span class="c-secondary">Une passion forgée</span><br>sur les circuits.</h2>
+            <p class="body" data-reveal-item>Menée par <strong>Julien et Claude Schell</strong>, Pegasus Racing accompagne depuis plus de 20 ans pilotes amateurs et confirmés, et s'est imposée comme une référence en endurance.</p>
+            <p class="body" data-reveal-item>Installée en Alsace, à Geispolsheim, la structure réunit team de compétition et atelier mécanique. De l'initiation au perfectionnement, chaque projet reçoit une offre sur mesure.</p>
+            <ul class="badges" data-reveal-item>
+              <li><span class="icon" aria-hidden="true">check_circle</span><span><strong>Titres européens &amp; courses internationales :</strong> des centaines de courses, jusqu'au WEC en Chine et en Indonésie.</span></li>
+              <li><span class="icon" aria-hidden="true">check_circle</span><span><strong>4 participations aux 24 Heures du Mans</strong>, la référence de l'endurance mondiale.</span></li>
+              <li><span class="icon" aria-hidden="true">check_circle</span><span><strong>Atelier intégré en Alsace :</strong> préparation, fiabilisation, contrôles et mise au point châssis.</span></li>
             </ul>
           </div>
-          <div class="split-media">
-            <article class="photo-card" data-reveal-item>
-              <img src="./assets/private.webp" alt="Groupe d'invités près de voitures sportives au coucher du soleil, visuel d'intention" width="683" height="768" loading="lazy">
-              <div class="photo-card-body"><span class="mono c-cyan">Hospitalité paddock</span><h3>Lounge &amp; convivialité</h3><p>Un moment d'échange au cœur des vibrations de la voie des stands.</p></div>
+          <div class="collage">
+            <figure class="media r-16-10" data-reveal-item>
+              <img src="./assets/pitstop.webp" alt="Équipe au travail sur un prototype dans un garage, visuel d'intention" width="1248" height="832" loading="lazy">
+              <figcaption class="media-cap"><span class="mono c-cyan">Paddock // Pit lane</span><p>Préparation &amp; stratégie de course</p></figcaption>
+              <span class="live-tag">LIVE DATA</span>
+            </figure>
+            <div class="collage-row">
+              <figure class="media r-4-3" data-reveal-item>
+                <img src="./assets/private.webp" alt="Groupe réuni en bord de piste au coucher du soleil, visuel d'intention" width="683" height="768" loading="lazy">
+                <figcaption class="media-cap media-cap-sm"><span class="mono c-secondary">Accompagnement</span><p>Pilotes amateurs &amp; confirmés</p></figcaption>
+              </figure>
+              <figure class="media r-4-3" data-reveal-item>
+                <img src="./assets/celebration.webp" alt="Célébration dans la voie des stands, visuel d'intention" width="912" height="1152" loading="lazy">
+                <figcaption class="media-cap media-cap-sm"><span class="mono c-secondary">Palmarès</span><p>Titres européens</p></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BREAK 1 -->
+      <section class="break" aria-labelledby="b1-title">
+        <div class="interlude-bg" data-parallax-section aria-hidden="true"><img src="./assets/team.webp" alt="" width="1248" height="832" loading="lazy"></div>
+        <div class="break-scrim" aria-hidden="true"></div>
+        <div class="break-content" data-reveal>
+          <span class="chip chip-pill c-white" data-reveal-item><span class="dot dot-red"></span>24H du Mans &amp; WEC</span>
+          <h2 id="b1-title" class="h-break" data-reveal-item>Dans la fraction de seconde <br><span class="grad-text grad-rev">où tout bascule.</span></h2>
+          <p class="lead" data-reveal-item>La gestion du trafic, l'usure des gommes et la régularité au millième : l'essence même de l'endurance.</p>
+          <div class="break-tags" data-reveal-item><span>// Speed</span><span>// Precision</span><span>// Endurance</span></div>
+        </div>
+      </section>
+
+      <!-- 02 POLES -->
+      <section class="section-lg" style="background: var(--carbon)" id="poles" aria-labelledby="h2-title">
+        <div class="wrap" data-reveal>
+          <div class="section-head head-rule" data-reveal-item>
+            <div><p class="index index-cyan">/ 02 — Nos programmes</p><h2 id="h2-title" class="h-xl">Trois pôles <span class="grad-text grad-cool">d'excellence.</span></h2></div>
+            <p>Du pilotage en compétition aux journées circuit et aux événements, trois façons de vivre le sport automobile avec une écurie.</p>
+          </div>
+          <div class="pillars">
+            <article class="pillar" data-reveal-item>
+              <div class="pillar-media r-16-11"><img src="./assets/prototype.webp" alt="Prototype d'endurance sur piste mouillée, visuel d'intention" width="753" height="941" loading="lazy"><div class="pillar-top"><span class="chip chip-pill">Compétition</span><span class="pillar-num">01</span></div></div>
+              <div class="pillar-body">
+                <h3>Racing</h3>
+                <p class="mono">Compétition &amp; endurance</p>
+                <p>Team management, mécanique et ingénierie pour que le pilote se concentre sur le pilotage, du débutant au pilote confirmé.</p>
+                <div class="pillar-foot"><a href="racing.html"><span>Explorer le pôle Racing</span><span class="icon" aria-hidden="true">arrow_forward</span></a><span class="icon" aria-hidden="true">sports_score</span></div>
+              </div>
             </article>
-            <article class="photo-card photo-card-offset" data-reveal-item>
-              <img src="./assets/prototype.webp" alt="Prototype d'endurance sur une piste mouillée au crépuscule, visuel d'intention" width="753" height="941" loading="lazy">
-              <div class="photo-card-body"><span class="mono c-cyan">Adrénaline pure</span><h3>Baptêmes prototype</h3><p>Ressentir les accélérations et l'appui aérodynamique d'un prototype d'endurance.</p></div>
+            <article class="pillar" data-reveal-item>
+              <div class="pillar-media r-16-11"><img src="./assets/roadtrip.webp" alt="Voitures sportives sur une route de montagne, visuel d'intention" width="683" height="768" loading="lazy"><div class="pillar-top"><span class="chip chip-pill">Circuit &amp; coaching</span><span class="pillar-num">02</span></div></div>
+              <div class="pillar-body">
+                <h3>Trackday</h3>
+                <p class="mono">Journées circuit encadrées</p>
+                <p>Rouler sur circuit avec le soutien d'une écurie : préparation du véhicule, assistance sur place et conseils de pilotage.</p>
+                <div class="pillar-foot"><a href="trackday.html"><span>Explorer Trackday</span><span class="icon" aria-hidden="true">arrow_forward</span></a><span class="icon" aria-hidden="true">timer</span></div>
+              </div>
+            </article>
+            <article class="pillar" data-reveal-item>
+              <div class="pillar-media r-16-11"><img src="./assets/reception.webp" alt="Réception en soirée dans un atelier de course, visuel d'intention" width="912" height="1152" loading="lazy"><div class="pillar-top"><span class="chip chip-pill">Privé &amp; entreprises</span><span class="pillar-num">03</span></div></div>
+              <div class="pillar-body">
+                <h3>Event</h3>
+                <p class="mono">Expériences &amp; séminaires</p>
+                <p>Baptêmes, rencontres entre passionnés, séminaires et roadtrips : des événements automobiles conçus avec l'équipe.</p>
+                <div class="pillar-foot"><a href="event.html"><span>Explorer Event</span><span class="icon" aria-hidden="true">arrow_forward</span></a><span class="icon" aria-hidden="true">corporate_fare</span></div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- 02 FORMATS -->
-      <section class="section s-light" id="formats" aria-labelledby="s2-title" data-reveal>
-        <div class="wrap">
-          <div class="section-head section-head-rule" data-reveal-item>
-            <div><p class="index index-blue">/ 02 — Catalogue d'expériences</p><h2 id="s2-title" class="h-xl">Nos formats <span class="c-blue">d'événement</span></h2></div>
-            <p>Chaque projet est modulable selon vos envies, de la rencontre entre passionnés au séminaire d'entreprise.</p>
+      <!-- 03 INGENIERIE -->
+      <section class="section-lg s-navy" style="border-top: 1px solid rgba(255,255,255,.1)" aria-labelledby="h3-title">
+        <div class="wrap eng" data-reveal>
+          <div>
+            <span class="chip" data-reveal-item><span class="dot"></span>/ 03 — Méthodologie &amp; rigueur</span>
+            <h2 id="h3-title" class="h-xl" data-reveal-item>L'exigence de la <br><span class="c-cyan">compétition internationale.</span></h2>
+            <p class="lead" data-reveal-item>En endurance, la course se prépare bien avant le drapeau vert. La même rigueur s'applique à chaque voiture qui passe par l'atelier de Geispolsheim.</p>
+            <div class="tiles-2">
+              <div class="tech-tile" data-reveal-item><span class="icon-box"><span class="icon" aria-hidden="true">flag</span></span><h3 class="h-sm">Team management</h3><p>Organisation du week-end de course pour que le pilote reste concentré sur sa piste.</p></div>
+              <div class="tech-tile" data-reveal-item><span class="icon-box"><span class="icon" aria-hidden="true">speed</span></span><h3 class="h-sm">Ingénierie &amp; châssis</h3><p>Mise au point châssis sur mesure et analyse des performances avec le pilote.</p></div>
+              <div class="tech-tile" data-reveal-item><span class="icon-box"><span class="icon" aria-hidden="true">build</span></span><h3 class="h-sm">Mécanique</h3><p>Préparation spécifique, fiabilisation, inspections et contrôles des véhicules.</p></div>
+              <div class="tech-tile" data-reveal-item><span class="icon-box"><span class="icon" aria-hidden="true">local_shipping</span></span><h3 class="h-sm">Circuits d'Europe</h3><p>Une connaissance de la plupart des circuits de France et d'Europe.</p></div>
+            </div>
           </div>
-          <div class="format-grid">
-            <article class="format-card" data-reveal-item>
-              <div class="format-media">
-                <img src="./assets/private.webp" alt="Passionnés réunis près de voitures sportives en bord de piste, visuel d'intention" width="683" height="768" loading="lazy">
-                <span class="tag tag-dark">Format 01</span><span class="tag tag-blue">Particuliers &amp; clubs</span>
-              </div>
-              <div class="format-body">
-                <h3>Événements privés &amp; clubs</h3>
-                <p>Rassemblements entre passionnés, journées piste avec vos propres voitures ou baptêmes passager encadrés par l'équipe.</p>
-                <ul><li>Baptêmes passager en prototype</li><li>Accompagnement et conseils de pilotage</li><li>Échanges avec l'équipe de l'écurie</li></ul>
-                <a class="card-link" href="#contact-event"><span>Configurer une journée club</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
-              </div>
-            </article>
-            <article class="format-card format-card-red" data-reveal-item>
-              <div class="format-media">
-                <img src="./assets/corporate.webp" alt="Échange autour d'une voiture de course dans un atelier, visuel d'intention" width="683" height="768" loading="lazy">
-                <span class="tag tag-dark">Format 02</span><span class="tag tag-red">Incentive &amp; B2B</span>
-              </div>
-              <div class="format-body">
-                <h3>Séminaires &amp; entreprises</h3>
-                <p>Fédérer vos équipes et marquer vos clients avec une immersion inspirée de l'exigence et de la cohésion de l'endurance.</p>
-                <ul><li>Challenge pit-stop chronométré en équipe</li><li>Immersion dans l'organisation d'une écurie</li><li>Moments de réception sur place</li></ul>
-                <a class="card-link" href="#contact-event"><span>Demander une offre incentive</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
-              </div>
-            </article>
-            <article class="format-card" data-reveal-item>
-              <div class="format-media">
-                <img src="./assets/roadtrip.webp" alt="Voitures sportives sur une route de montagne au lever du soleil, visuel d'intention" width="683" height="768" loading="lazy">
-                <span class="tag tag-dark">Format 03</span><span class="tag tag-navy">Sur-mesure</span>
-              </div>
-              <div class="format-body">
-                <h3>Roadtrips &amp; rallyes privés</h3>
-                <p>Des itinéraires tracés à travers l'Alsace, la Forêt-Noire ou les Alpes, avec le soutien technique d'une écurie.</p>
-                <ul><li>Assistance mécanique de l'atelier</li><li>Étapes et hébergements choisis</li><li>Parcours conçu selon votre groupe</li></ul>
-                <a class="card-link" href="#contact-event"><span>Co-créer votre rallye</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
-              </div>
-            </article>
+          <div class="console-wrap" data-reveal-item>
+            <img src="./assets/corporate.webp" alt="Ingénieurs autour d'un prototype et d'écrans de données, visuel d'intention" width="683" height="768" loading="lazy">
+            <div class="console">
+              <div class="console-head"><span class="mono c-cyan"><span class="icon" aria-hidden="true">monitor_heart</span>Atelier // Mise au point</span><span class="live"><span class="dot dot-red dot-pulse" style="width:6px;height:6px"></span>LIVE</span></div>
+              <div class="bar-row"><div class="bar-label"><span>CALIBRATION SUSPENSION</span><span class="c-cyan">EN COURS</span></div><div class="bar"><i style="width:94%"></i></div></div>
+              <div class="bar-row"><div class="bar-label"><span>FIABILISATION MOTEUR</span><span class="c-primary">CONTRÔLE</span></div><div class="bar"><i class="alt" style="width:82%"></i></div></div>
+              <p>Illustration d'interface : préparation et contrôle de chaque véhicule avant la piste.</p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <!-- INTERLUDE -->
-      <section class="interlude" aria-labelledby="interlude-title">
-        <div class="interlude-bg" data-parallax-section aria-hidden="true"><img src="./assets/hero.webp" alt="" width="1672" height="941" loading="lazy"></div>
-        <div class="interlude-scrim" aria-hidden="true"></div>
-        <div class="interlude-content" data-reveal>
-          <span class="chip chip-soft" data-reveal-item><span class="dot"></span>Émotion pure &amp; précision</span>
-          <h2 id="interlude-title" data-reveal-item>« Des instants rares, <br><span class="grad-text grad-rev">façonnés hors du temps. »</span></h2>
-          <p data-reveal-item>La rencontre entre l'exigence des circuits internationaux et l'art de recevoir.</p>
-          <a class="btn btn-primary" href="#contact-event" data-reveal-item><span>Organiser votre session</span></a>
-        </div>
-      </section>
-
-      <!-- 03 METHODE -->
-      <section class="section s-lowest" aria-labelledby="s3-title" data-reveal>
-        <div class="wrap">
-          <div class="center-head" data-reveal-item>
-            <p class="index index-red">/ 03 — Méthodologie &amp; rigueur</p>
-            <h2 id="s3-title" class="h-xl">Une organisation <span class="c-cyan">au millimètre</span></h2>
-            <p>Comme lors d'un ravitaillement aux 24 Heures du Mans, chaque étape de votre journée est planifiée pour une expérience fluide, intense et sereine.</p>
-          </div>
-          <ol class="steps">
-            <li class="step step-blue" data-reveal-item>
-              <div class="step-top"><span class="step-num">01</span><span class="icon" aria-hidden="true">forum</span></div>
-              <h3>Échangeons sur votre projet</h3>
-              <p>Vos objectifs, le nombre de participants, le profil des pilotes, débutants ou confirmés, et le type d'expérience souhaité.</p>
-              <span class="step-foot">Jalon initial // Cadrage</span>
-            </li>
-            <li class="step step-cyan" data-reveal-item>
-              <div class="step-top"><span class="step-num">02</span><span class="icon" aria-hidden="true">route</span></div>
-              <h3>Imaginons votre expérience</h3>
-              <p>Choix du circuit ou de l'itinéraire, des véhicules engagés, du déroulé et des temps forts de la journée.</p>
-              <span class="step-foot">Ingénierie sur-mesure</span>
-            </li>
-            <li class="step step-red" data-reveal-item>
-              <div class="step-top"><span class="step-num">03</span><span class="icon" aria-hidden="true">construction</span></div>
-              <h3>Préparons l'événement</h3>
-              <p>Préparation technique des véhicules, logistique, sécurité et organisation de l'accueil de vos invités.</p>
-              <span class="step-foot">Logistique écurie</span>
-            </li>
-            <li class="step step-white" data-reveal-item>
-              <div class="step-top"><span class="step-num">04</span><span class="icon" aria-hidden="true">sports_score</span></div>
-              <h3>Vivez l'adrénaline</h3>
-              <p>Immersion, tours de piste, échanges avec l'équipe et souvenirs partagés pour l'ensemble de vos invités.</p>
-              <span class="step-foot">Jour J // Plein gaz</span>
-            </li>
-          </ol>
         </div>
       </section>
 
       <!-- 04 GALERIE -->
-      <section class="section s-navy edge-top" aria-labelledby="s4-title" data-reveal>
-        <div class="wrap">
-          <div class="section-head" data-reveal-item>
-            <div><p class="index index-cyan">/ 04 — Regards &amp; souvenirs</p><h2 id="s4-title" class="h-xl">Instants <span class="c-secondary">Pegasus Racing</span></h2></div>
-            <p>Chaque rendez-vous peut devenir une célébration du sport automobile, entre camaraderie, exigence technique et sourires partagés.</p>
+      <section class="section-lg s-lowest" aria-labelledby="h4-title">
+        <div class="wrap" data-reveal>
+          <div class="section-head head-rule" style="margin-bottom:3rem;padding-bottom:2rem" data-reveal-item>
+            <div><p class="index index-cyan">/ 04 — Immersion</p><h2 id="h4-title" class="h-xl">Au cœur de <span class="c-secondary">la trajectoire.</span></h2></div>
+            <p>Instantanés de course, travail minutieux au box et adrénaline partagée entre pilotes et mécaniciens.</p>
           </div>
-          <div class="bento">
-            <figure class="tile tile-wide" data-reveal-item><img src="./assets/team.webp" alt="Pilotes et ingénieurs riant ensemble sur un muret des stands, visuel d'intention" width="1248" height="832" loading="lazy"><figcaption class="tile-row"><span>Esprit de team &amp; paddock</span><span class="mono c-cyan">Paddock // Camaraderie</span></figcaption></figure>
-            <figure class="tile" data-reveal-item><img src="./assets/cockpit.webp" alt="Mains gantées sur le volant d'un prototype, visuel d'intention" width="912" height="1152" loading="lazy"><figcaption><span>Au cockpit</span><span class="mono c-secondary">Préparation départ</span></figcaption></figure>
-            <figure class="tile" data-reveal-item><img src="./assets/reception.webp" alt="Réception en soirée dans un atelier de course, visuel d'intention" width="912" height="1152" loading="lazy"><figcaption><span>Réceptif d'atelier</span><span class="mono c-secondary">Soirée privative</span></figcaption></figure>
-            <figure class="tile" data-reveal-item><img src="./assets/chateau.webp" alt="Voitures sportives garées dans la cour d'un château alsacien, visuel d'intention" width="912" height="1152" loading="lazy"><figcaption><span>Rallye châteaux</span><span class="mono c-secondary">Route des vins</span></figcaption></figure>
-            <figure class="tile tile-wide" data-reveal-item><img src="./assets/pitstop.webp" alt="Équipe changeant une roue de prototype lors d'un challenge pit-stop, visuel d'intention" width="1248" height="832" loading="lazy"><figcaption class="tile-row"><span>Pit-stop challenge</span><span class="mono c-red">Immersion chrono</span></figcaption></figure>
-            <figure class="tile" data-reveal-item><img src="./assets/celebration.webp" alt="Célébration dans la voie des stands la nuit, visuel d'intention" width="912" height="1152" loading="lazy"><figcaption><span>Podium &amp; célébration</span><span class="mono c-cyan">Victoire partagée</span></figcaption></figure>
+          <div class="mosaic">
+            <figure class="media m8 r-16-10" data-reveal-item><img src="./assets/hero.webp" alt="Prototype et GT dans la voie des stands au crépuscule, visuel d'intention" width="1672" height="941" loading="lazy" style="object-position:70% center"><figcaption class="media-cap"><span class="mono c-cyan">Voie des stands</span><p>Ravitaillement &amp; gestion des pneumatiques</p></figcaption></figure>
+            <figure class="media m4 r-4-5" data-reveal-item><img src="./assets/cockpit.webp" alt="Pilote au volant d'un prototype, visuel d'intention" width="912" height="1152" loading="lazy"><figcaption class="media-cap"><span class="mono c-cyan">Concentration pilote</span><p>Le focus absolu avant le relais</p></figcaption></figure>
+            <figure class="media m4 r-4-3" data-reveal-item><img src="./assets/cockpit.webp" alt="Volant de prototype et écran de bord, visuel d'intention" width="912" height="1152" loading="lazy" style="object-position:center 70%"><figcaption class="media-cap media-cap-sm"><span class="mono" style="color:var(--outline)">Cockpit</span><p>Commandes &amp; écran de bord</p></figcaption></figure>
+            <figure class="media m4 r-4-3" data-reveal-item><img src="./assets/corporate.webp" alt="Atelier avec un prototype et des écrans, visuel d'intention" width="683" height="768" loading="lazy" style="object-position:center 30%"><figcaption class="media-cap media-cap-sm"><span class="mono" style="color:var(--outline)">Atelier Alsace</span><p>Préparation &amp; mise au point châssis</p></figcaption></figure>
+            <figure class="media m4 r-4-3" data-reveal-item><img src="./assets/team.webp" alt="Pilotes et ingénieurs échangeant sur un muret des stands, visuel d'intention" width="1248" height="832" loading="lazy"><figcaption class="media-cap media-cap-sm"><span class="mono" style="color:var(--outline)">Coaching pilote</span><p>Débriefing &amp; échanges</p></figcaption></figure>
           </div>
-          <p class="image-note">Visuels d'intention générés pour cette preview : ils ne documentent pas des événements réels de Pegasus Racing.</p>
+          <p class="image-note">Visuels d'intention générés pour cette preview : ils ne documentent pas des courses réelles de Pegasus Racing.</p>
         </div>
       </section>
 
-      <!-- 05 CONTACT -->
-      <section class="section contact" id="contact-event" aria-labelledby="s5-title">
-        <div class="contact-bg" aria-hidden="true"></div>
-        <div class="glow glow-blue" aria-hidden="true"></div>
-        <div class="glow glow-cyan" aria-hidden="true"></div>
-        <div class="wrap contact-wrap" data-reveal>
-          <div class="contact-panel" data-reveal-item>
-            <div class="contact-aside">
-              <div>
-                <p class="index index-cyan">/ 05 — Projet sur-mesure</p>
-                <h2 id="s5-title" class="h-lg">Donnez une nouvelle <br><span class="grad-text grad-cool">dimension à vos événements.</span></h2>
-                <p class="body">Contactez l'équipe pour concevoir un format qui vous ressemble : baptême en prototype, rencontre d'entreprise ou rallye entre passionnés.</p>
-                <ul class="info-list">
-                  <li><span class="icon" aria-hidden="true">location_on</span>Siège &amp; atelier : 12 rue de l'Ill, 67118 Geispolsheim</li>
-                  <li><span class="icon" aria-hidden="true">call</span>03 88 65 99 99</li>
-                  <li><span class="icon" aria-hidden="true">mail</span><span class="c-cyan">event@pegasus-racing.com</span></li>
-                </ul>
-              </div>
-              <div class="signature">
-                <span class="mono c-secondary">Direction d'écurie</span>
-                <p>Julien et Claude Schell accompagnent pilotes amateurs et confirmés depuis plus de 20 ans.</p>
-                <span class="mono c-outline">4 participations aux 24 Heures du Mans</span>
-              </div>
-            </div>
+      <!-- BREAK 2 -->
+      <section class="break" aria-labelledby="b2-title">
+        <div class="interlude-bg" data-parallax-section aria-hidden="true"><img src="./assets/celebration.webp" alt="" width="912" height="1152" loading="lazy"></div>
+        <div class="break-scrim break-scrim-v" aria-hidden="true"></div>
+        <div class="break-content" data-reveal>
+          <span class="chip chip-pill c-white" data-reveal-item><span class="dot dot-pulse"></span>Nocturne 24 heures // Pit strategy</span>
+          <h2 id="b2-title" class="h-break" data-reveal-item>L'endurance est une <br><span class="grad-text grad-rev">science de précision.</span></h2>
+          <p class="lead" data-reveal-item>Quand la nuit tombe sur la ligne droite des Hunaudières, seule compte la symbiose entre la mécanique et l'instinct du pilote.</p>
+          <div class="break-tags break-tags-boxed" data-reveal-item><span>Telemetry: active</span><span>Tire strategy: optimal</span><span>Pace: competitive</span></div>
+        </div>
+      </section>
 
-            <form class="contact-form" data-demo-form novalidate>
-              <div class="field-row">
-                <div class="field"><label for="event-name">Votre nom / société *</label><input id="event-name" name="name" type="text" placeholder="Jean Dupont / Société" autocomplete="name" required></div>
-                <div class="field"><label for="event-email">Adresse email *</label><input id="event-email" name="email" type="email" placeholder="contact@societe.com" autocomplete="email" required></div>
-              </div>
-              <div class="field-row">
-                <div class="field"><label for="event-type">Format souhaité *</label>
-                  <select id="event-type" name="type" required>
-                    <option value="" disabled selected>Sélectionnez un format</option>
-                    <option>Séminaire d'entreprise &amp; incentive</option>
-                    <option>Baptêmes piste en prototype</option>
-                    <option>Rallye &amp; roadtrip</option>
-                    <option>Journée club</option>
-                    <option>Autre projet sur-mesure</option>
-                  </select>
-                </div>
-                <div class="field"><label for="event-guests">Nombre de participants estimé</label><input id="event-guests" name="guests" type="text" placeholder="Ex. : 10 à 35 personnes"></div>
-              </div>
-              <div class="field"><label for="event-message">Détails de votre projet *</label><textarea id="event-message" name="message" rows="4" placeholder="Vos envies, la période visée, les circuits envisagés…" required></textarea></div>
-              <div class="form-foot">
-                <p>Formulaire de démonstration : aucune donnée n'est transmise ni enregistrée.</p>
-                <button class="btn btn-primary btn-lg" type="submit"><span>Envoyer ma demande</span><span class="icon" aria-hidden="true">send</span></button>
-              </div>
-              <p class="form-success" role="status" tabindex="-1" hidden data-form-feedback><span class="icon" aria-hidden="true">check_circle</span><span>Démonstration : votre demande n'a pas été envoyée. Sur le site final, elle serait transmise à l'équipe événementielle.</span></p>
-            </form>
+      <!-- CTA -->
+      <section class="cta-center" aria-labelledby="cta-title">
+        <div class="contact-bg" aria-hidden="true"></div>
+        <div class="wrap" data-reveal>
+          <span class="chip" data-reveal-item><span class="dot dot-red dot-pulse"></span>Racing // Trackday // Event</span>
+          <h2 id="cta-title" class="h-break" data-reveal-item>Votre prochain défi <br><span class="grad-text">commence sur la grille.</span></h2>
+          <p class="lead" data-reveal-item>Saison complète de compétition, journée sur circuit ou immersion pour votre entreprise : parlons de vos objectifs.</p>
+          <div class="cta-actions" data-reveal-item>
+            <a class="btn btn-primary btn-lg btn-glow" href="contact.html"><span>Parlons de votre projet</span><span class="icon" aria-hidden="true">arrow_forward</span></a>
+            <a class="btn btn-glass btn-lg" href="tel:+33388659999"><span class="icon" aria-hidden="true">call</span><span>03 88 65 99 99</span></a>
+          </div>
+          <div class="coord-bar" data-reveal-item>
+            <span><span class="icon c-primary" aria-hidden="true">location_on</span>12 rue de l'Ill, 67118 Geispolsheim</span>
+            <a href="mailto:info@pegasus-racing.com"><span class="icon c-cyan" aria-hidden="true">mail</span>info@pegasus-racing.com</a>
+            <a href="mailto:event@pegasus-racing.com"><span class="icon c-red" aria-hidden="true">mail</span>event@pegasus-racing.com</a>
           </div>
         </div>
       </section>
@@ -268,20 +238,20 @@
       <div class="wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <div class="brand"><img src="./assets/logo-pegasus.png" alt="" width="226" height="118"><span class="brand-name"><strong>Pegasus Racing</strong><small>Écurie automobile</small></span></div>
+            <a class="brand" href="index.html" aria-label="Pegasus Racing, accueil"><img src="./assets/logo-pegasus.png" alt="" width="226" height="118"><span class="brand-name"><strong>Pegasus Racing</strong><small>Écurie automobile</small></span></a>
             <p>Team de compétition automobile et atelier mécanique. Plus de 20 ans d'expérience et 4 participations aux 24 Heures du Mans.</p>
             <span class="chip chip-footer"><span class="dot dot-red dot-pulse"></span>24H du Mans ×4</span>
           </div>
           <div class="footer-col">
             <span class="footer-title">Navigation</span>
-            <a href="#top">Accueil</a><span class="nav-off">Racing</span><span class="nav-off">Trackday</span><a href="#top">Event</a><a href="#contact-event">Contact</a>
+            <a href="index.html">Accueil</a><a href="racing.html">Racing</a><a href="trackday.html">Trackday</a><a href="event.html">Event</a><a href="contact.html">Contact</a>
           </div>
           <div class="footer-col">
             <span class="footer-title">Atelier &amp; siège</span>
             <p>12 rue de l'Ill, 67118 Geispolsheim</p>
-            <p>Tél. : 03 88 65 99 99</p>
-            <span class="c-primary">info@pegasus-racing.com</span>
-            <span class="c-primary">event@pegasus-racing.com</span>
+            <a href="tel:+33388659999">Tél. : 03 88 65 99 99</a>
+            <a class="c-primary" href="mailto:info@pegasus-racing.com">info@pegasus-racing.com</a>
+            <a class="c-primary" href="mailto:event@pegasus-racing.com">event@pegasus-racing.com</a>
           </div>
           <div class="footer-col">
             <span class="footer-title">Restez connecté</span>
