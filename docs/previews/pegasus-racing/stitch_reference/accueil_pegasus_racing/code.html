@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+.parallax-bg { will-change: transform; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#7dd0ff", "electric-cyan": "#00E5FF", "inverse-primary": "#225eab", "surface-container-low": "#0e1c2c", "surface-tint": "#a9c7ff", "primary": "#a9c7ff", "speed-crimson": "#E11D48", "inverse-on-surface": "#243142", "tertiary": "#7dd0ff", "secondary": "#b5c7e7", "primary-container": "#1254a1", "on-secondary-fixed": "#081c34", "tertiary-fixed": "#c4e7ff", "on-tertiary-fixed-variant": "#004c69", "on-primary-fixed-variant": "#00468c", "on-secondary-fixed-variant": "#364862", "surface-container-highest": "#283647", "surface-container": "#122030", "on-primary-fixed": "#001b3d", "tertiary-container": "#005b7d", "on-secondary-container": "#a4b6d5", "secondary-fixed-dim": "#b5c7e7", "on-surface": "#d5e4fa", "outline-variant": "#424751", "surface-variant": "#283647", "background": "#051424", "on-secondary": "#1f314a", "secondary-container": "#364862", "on-primary": "#003063", "on-tertiary-fixed": "#001e2c", "inverse-surface": "#d5e4fa", "secondary-fixed": "#d4e3ff", "surface-container-high": "#1d2b3b", "on-surface-variant": "#c2c6d3", "on-error-container": "#ffdad6", "surface-container-lowest": "#020f1e", "primary-fixed": "#d6e3ff", "surface-bright": "#2c3a4b", "error": "#ffb4ab", "on-primary-container": "#afcbff", "carbon-black": "#040404", "on-background": "#d5e4fa", "on-tertiary": "#00344a", "surface": "#051424", "on-tertiary-container": "#85d2ff", "on-error": "#690005", "pure-white": "#FFFFFF", "primary-fixed-dim": "#a9c7ff", "light-surface": "#F4F7FA", "surface-dim": "#051424", "error-container": "#93000a", "outline": "#8c919c" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.75rem", "gutter-desktop": "2rem", "space-xl": "3rem", "margin-desktop": "3.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "display-hero-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "body-lg": [ "Montserrat" ], "stat-counter": [ "Space Grotesk" ], "body-md": [ "Montserrat" ], "body-sm": [ "Montserrat" ], "headline-xl-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-uppercase": [ "Montserrat" ], "display-hero": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "index-marker": [ "Space Mono" ] }, "fontSize": { "display-hero-mobile": [ "40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "stat-counter": [ "56px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl-mobile": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-uppercase": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" } ], "display-hero": [ "72px", { "lineHeight": "76px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-xl": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "index-marker": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" } ] } } } }</script></head><body class="bg-carbon-black text-on-surface font-body-md selection:bg-primary-container selection:text-pure-white antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-[#091D35]/85 backdrop-blur-xl border-b border-white/10 transition-all duration-300"><div class="h-20 max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm group" data-path="accueil" href="#"><img alt="Image from https://www.pegasus-racing.com/wp-content/uploads/2024/08/logo-Pegasus-blanc-300x233.png" class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WNO5fzISyCxTSfif_JOAuVW-ZGyR0N4_HkzDzsutc1IlXaCkszlo7pSPP1WWnwAya4yV5ifQOsM55zfmXQNNGnnhsf6rCQfYpwwWYmvknSZhiThjX3I502dR-lVAt-PJ6CMKd8lXgYEBdOqleq9U9VvpWFJJRxy0pAUqW7QX3-MjrPZSee9DJv8B9aijRb7PKHbWXiORuGf3QhFsgYLzaQaI-1An3R_MDPuQN5hfwxIochtb7QfpPrSw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-pure-white group-hover:text-primary transition-colors">Pegasus</span><span class="font-index-marker text-index-marker text-electric-cyan uppercase -mt-1 tracking-widest">Racing</span></div></a></div><nav class="hidden lg:flex items-center gap-1.5 p-1.5 rounded-full bg-surface-container-lowest/80 border border-white/10 backdrop-blur-xl shadow-lg" data-active-classes="bg-primary-container text-pure-white font-bold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.25)]"><a aria-current="page" class="px-space-md py-space-xs uppercase transition-all bg-primary-container text-pure-white font-semibold rounded-full shadow-[0_0_16px_rgba(18,84,161,0.6)] font-label-uppercase text-label-uppercase tracking-wider" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors hover:bg-white/5 rounded-full" data-path="racing" href="#racing-pillar">Racing</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors hover:bg-white/5 rounded-full" data-path="trackday" href="#trackday-pillar">Trackday</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors hover:bg-white/5 rounded-full" data-path="event" href="#event-pillar">Event</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors hover:bg-white/5 rounded-full" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_24px_rgba(18,84,161,0.7)] group border border-electric-cyan/20" data-path="contact" href="#contact"><span>Nous contacter</span><span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-carbon-black min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- =========================================================================
+       SECTION A — HERO SECTION (Full Viewport Height 100vh with Smooth Parallax)
+       ========================================================================= -->
+<section class="relative w-full h-screen min-h-[700px] overflow-hidden bg-carbon-black -mt-20 flex flex-col justify-between" id="hero-section">
+<!-- Smooth GPU Parallax Background Image Container -->
+<div class="parallax-bg absolute inset-0 -top-24 -bottom-24 w-full bg-cover bg-center transform-gpu" data-alt="Modern LMP3 prototype and GT endurance race car in high-speed motion on Circuit de la Sarthe at dusk, deep metallic navy and cyan highlights, carbon fiber aero textures, cinematic lighting and wet asphalt reflections" data-speed="0.25" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtyPeIogv65SSSRYIzNPlacmyYmfjS8OfiBBzqVH0MyxrQqX7swMS4wKvNoU9T93lJzEN-uIEE-T-vB78o1J3F6Jxy27c8z-VzAYijK-rY_KVJFlet3S-SadZV00AoIOgbM7bck--jAsgrabGsCH9a6C0dMayy9nRgbvip297mbfyp6apLyDU9-ma5QiDSOGX136O-DTJcr18kxDDRK7QrtZp_WWepdF9GuIkFiHGw6iLFCqKtB6M');">
+</div>
+<!-- Cinematic Vignette & Take Your Gloves Art Direction Overlays -->
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black via-carbon-black/60 to-[#091D35]/80 pointer-events-none"></div>
+<div class="absolute inset-0 bg-radial-gradient from-transparent via-carbon-black/40 to-carbon-black/90 pointer-events-none"></div>
+<div class="absolute -top-32 right-1/4 w-[600px] h-[600px] bg-primary-container/25 rounded-full blur-[150px] pointer-events-none"></div>
+<!-- Hero Foreground Telemetry & Content -->
+<div class="relative z-10 max-w-[1440px] w-full mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop pt-32 md:pt-36 flex flex-col justify-between h-full pb-8">
+<!-- Top Telemetry & Coordinates Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-5">
+<div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-full bg-black/50 border border-white/10 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-speed-crimson animate-ping"></span>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">
+            ALSACE // OFFICIAL MOTORSPORT TEAM // EST. 2000
+          </span>
+</div>
+<div class="font-index-marker text-index-marker text-on-surface-variant/90 uppercase hidden md:flex items-center gap-4 bg-black/40 px-3 py-1 rounded border border-white/5 backdrop-blur-md">
+<span class="text-electric-cyan">LAT 48.5144° N</span>
+<span class="text-white/20">|</span>
+<span class="text-electric-cyan">LON 7.7128° E</span>
+<span class="text-white/20">|</span>
+<span class="text-pure-white font-semibold">GEISPOLSHEIM, FR</span>
+</div>
+</div>
+<!-- Central Hero Typography & Narrative -->
+<div class="my-auto py-6 max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-surface-container-high/80 border border-electric-cyan/20 mb-6 backdrop-blur-md shadow-lg">
+<span class="material-symbols-outlined text-electric-cyan text-sm">flag</span>
+<span class="font-index-marker text-index-marker uppercase tracking-widest text-primary-fixed">Team de compétition &amp; atelier de précision</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-pure-white uppercase tracking-tight leading-[1.02] mb-6 font-bold">
+          La performance <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-pure-white via-primary-fixed to-electric-cyan">comme signature.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light leading-relaxed mb-8">
+          Compétition automobile, trackdays sur circuits mythiques et ingénierie de pointe. Plus de 20 ans d’expertise au plus haut niveau de l’endurance internationale pour révéler votre plein potentiel.
+        </p>
+<!-- CTA Dual Action Cluster -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_35px_rgba(0,229,255,0.4)] border border-electric-cyan/30 group" href="#poles">
+<span>Découvrir nos pôles</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-white/5 border border-white/25 text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider backdrop-blur-md hover:bg-pure-white hover:text-carbon-black transition-all duration-300 group" href="#contact">
+<span>Nous contacter</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-0.5">call</span>
+</a>
+</div>
+</div>
+<!-- Hero Bottom Stats Telemetry Bar -->
+<div class="border-t border-white/10 pt-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col">
+<div class="font-stat-counter text-stat-counter text-pure-white font-bold tracking-tighter flex items-baseline">
+              +20<span class="text-electric-cyan text-headline-lg font-light ml-1">ans</span>
+</div>
+<span class="font-index-marker text-index-marker text-outline uppercase tracking-wider mt-1">Expérience Compétition</span>
+</div>
+<div class="flex flex-col">
+<div class="font-stat-counter text-stat-counter text-pure-white font-bold tracking-tighter flex items-baseline">
+              4<span class="text-speed-crimson text-headline-lg font-light ml-1">x</span>
+</div>
+<span class="font-index-marker text-index-marker text-outline uppercase tracking-wider mt-1">24 Heures du Mans</span>
+</div>
+<div class="flex flex-col">
+<div class="font-stat-counter text-stat-counter text-pure-white font-bold tracking-tighter flex items-baseline">
+              100<span class="text-electric-cyan text-headline-lg font-light ml-1">+</span>
+</div>
+<span class="font-index-marker text-index-marker text-outline uppercase tracking-wider mt-1">Épreuves Internationales</span>
+</div>
+<div class="flex flex-col">
+<div class="font-stat-counter text-stat-counter text-pure-white font-bold tracking-tighter flex items-baseline">
+              1<span class="text-primary text-headline-lg font-light ml-1">Atelier</span>
+</div>
+<span class="font-index-marker text-index-marker text-outline uppercase tracking-wider mt-1">Ingénierie &amp; R&amp;D Alsace</span>
+</div>
+</div>
+<!-- Scroll Trigger -->
+<div class="mt-6 flex justify-center items-center">
+<a class="flex flex-col items-center gap-1.5 text-outline hover:text-electric-cyan transition-colors duration-200 group" href="#histoire">
+<span class="font-index-marker text-index-marker uppercase tracking-widest text-[10px]">Défiler</span>
+<span class="material-symbols-outlined text-sm animate-bounce text-electric-cyan">keyboard_arrow_down</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION B — INTRODUCTION & HISTOIRE DU TEAM (Asymmetric Editorial)
+       ========================================================================= -->
+<section class="w-full bg-surface-container-lowest py-24 md:py-32 relative overflow-hidden" id="histoire">
+<!-- Structural Subtle Grid Lines -->
+<div class="absolute left-1/2 top-0 bottom-0 w-px bg-white/5 pointer-events-none hidden lg:block"></div>
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Left Column: Heavy Editorial Headline & Credibility -->
+<div class="lg:col-span-5 lg:sticky lg:top-28">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 01 — HISTOIRE &amp; EXPERTISE</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-pure-white tracking-tight mb-6 leading-tight">
+            Plus qu'une écurie.<br/>
+<span class="text-secondary">Une passion forgée</span> <br/>
+            sur les circuits.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Fondée et dirigée par <strong class="text-pure-white font-semibold">Julien et Claude Schell</strong>, Pegasus Racing s’est imposée depuis plus de deux décennies comme une référence incontournable du sport automobile européen.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+            Installée au cœur de l'Alsace à Geispolsheim, notre structure conjugue le savoir-faire des plus grands rendez-vous d’endurance mondiale (24 Heures du Mans, WEC, ELMS) avec un esprit familial et passionné. De l’initiation au perfectionnement, nous accompagnons chaque pilote avec la même rigueur mécanique.
+          </p>
+<!-- Verified Badges List -->
+<div class="space-y-4 pt-6 border-t border-white/10">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-electric-cyan text-xl mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong class="text-pure-white">Titres Européens &amp; Courses Internationales :</strong> Présence sur les tracés de pointe en Chine, en Indonésie et à travers l'Europe.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-electric-cyan text-xl mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong class="text-pure-white">4 participations légendaires aux 24 Heures du Mans</strong> en catégorie Prototype LMP2 avec résultats d'élite.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-electric-cyan text-xl mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong class="text-pure-white">Centre technique intégré en Alsace :</strong> Bancs de réglage suspension, marbre laser, métrologie et composites carbone.</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Storytelling Collage -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="relative rounded overflow-hidden aspect-[16/10] bg-surface-container group shadow-2xl border border-white/10">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Pegasus Racing mechanics and engineers working inside an illuminated race paddock garage at night, adjusting telemetry cables and prototype racecar suspension, crisp focus on mechanical tools and carbon fiber aerodynamic wing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9u7qpbhn7ipdmBpP0pQhUFr3-OSR_ZaRlcOA3ocRP_Q_MuRhRn-kSsuLYkxNK4MahfmcEpPVqkH5Af37IExFrgzThEY-hZM413mFZFFw56800U66LNke39sWvffLJRyAQ6M0FAvjHtLd9Lbg_e-CyB2MJZRxRYPw8juGFkdPXCHxf5wJ8f0wptBXnge_IS9uwKeByJszLGuUT7iuLh82oaftSsDc_AsRtiv7VLDVO4BJZzxSwtXw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Paddock Pit Lane</span>
+<p class="font-headline-sm text-headline-sm text-pure-white font-semibold">Préparation &amp; Stratégie de Course</p>
+</div>
+<span class="font-index-marker text-index-marker px-2.5 py-1 rounded bg-black/70 text-pure-white border border-white/20">LIVE DATA</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Secondary Image 1 -->
+<div class="relative rounded overflow-hidden aspect-[4/3] bg-surface-container group border border-white/5">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Julien and Claude Schell standing beside a blue competition racecar in modern high-tech workshop, technical racing suits, authentic motorsport atmosphere, clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8MGFFhi9grWQ1iIyBwsLF93_FLDzFksMLpkCoQuCQHRzLZJHBJZN3kyyYOHznamA2y9uQ_AKF2yzdPxc2yWlQe-mETA9m9p2nyam9hKGGSsWDN1StPbazBkAh5sGqUCGMbpC4CyCHqXHw2eUv7Sish4j8dd4WtnWllcBkDCZP0L0IVCaDMnbGtONFTZNPgydL14lM2zUDYxQSDeQ7_ICHxzV3l2KI05-bU3rc4xn_VIDy03LffP4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/85 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-index-marker text-index-marker text-on-surface-variant text-[10px] uppercase">Fondateurs &amp; Pilotes</span>
+<p class="font-body-sm text-body-sm font-semibold text-pure-white">Claude &amp; Julien Schell</p>
+</div>
+</div>
+<!-- Secondary Image 2 -->
+<div class="relative rounded overflow-hidden aspect-[4/3] bg-surface-container group border border-white/5">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Aerodynamic Le Mans prototype car cornering on racing curb with heat haze and vibrant motion blur on a European circuit, sharp daylight motorsport photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlouXgEa5HmAgenJRXDduTqSZpcAUWSwJkpvl5YU3Hj3N3pTBatNrRNOoCf3oPE_yHMO2czyoQr6Uw5e8R8o7jcfkH6WLXyl5xTy4wEMJW0UYA7sbNC-TsqPrNTX1_ck8jvb5Cy5E5iUntcX_CABiliySvwvVzz1XfsZNdz9idUkvSB0pwrbwY_iZGZAgm8RePRX0b4vzL658z2ipyvKQzTKz4MFsu8SSiJ1wuWtxPsYclMEsiHrQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/85 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-index-marker text-index-marker text-on-surface-variant text-[10px] uppercase">Palmarès</span>
+<p class="font-body-sm text-body-sm font-semibold text-pure-white">Victoires &amp; Podiums Européens</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       MAJOR PARALLAX BREAK 1 — HIGH SPEED RACE MOMENTUM (75vh-85vh Full Bleed)
+       ========================================================================= -->
+<section class="relative w-full h-[75vh] md:h-[80vh] overflow-hidden flex items-center justify-center border-y border-white/10" id="parallax-break-1">
+<!-- Parallax Texture -->
+<div class="parallax-bg absolute inset-0 -top-32 -bottom-32 w-full bg-cover bg-center transform-gpu" data-alt="High speed Le Mans prototype endurance race car cornering along track curbs with motion blur and glowing brake discs" data-speed="0.22" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlouXgEa5HmAgenJRXDduTqSZpcAUWSwJkpvl5YU3Hj3N3pTBatNrRNOoCf3oPE_yHMO2czyoQr6Uw5e8R8o7jcfkH6WLXyl5xTy4wEMJW0UYA7sbNC-TsqPrNTX1_ck8jvb5Cy5E5iUntcX_CABiliySvwvVzz1XfsZNdz9idUkvSB0pwrbwY_iZGZAgm8RePRX0b4vzL658z2ipyvKQzTKz4MFsu8SSiJ1wuWtxPsYclMEsiHrQ');">
+</div>
+<!-- Deep Dark Blue Cinematic Vignette -->
+<div class="absolute inset-0 bg-gradient-to-r from-carbon-black via-[#091D35]/80 to-carbon-black/90 pointer-events-none"></div>
+<div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-black/60 border border-electric-cyan/40 backdrop-blur-md mb-6">
+<span class="w-2 h-2 rounded-full bg-speed-crimson"></span>
+<span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">24H DU MANS &amp; WEC EXPERTISE</span>
+</div>
+<h2 class="font-display-hero text-display-hero-mobile md:text-headline-xl lg:text-[56px] text-pure-white uppercase tracking-tight leading-[1.08] max-w-4xl mb-6">
+        Dans la fraction de seconde <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-electric-cyan via-pure-white to-primary-fixed">où tout bascule.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl font-light">
+        La gestion du trafic, l'usure calculée des gommes et la régularité absolue au millième de seconde : l'essence même de l'endurance.
+      </p>
+<div class="mt-8 flex items-center gap-6 font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">
+<span>// SPEED</span>
+<span>// PRECISION</span>
+<span>// ENDURANCE</span>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION C — LES TROIS PÔLES D'EXCELLENCE (Massive Photographic Editorial)
+       ========================================================================= -->
+<section class="w-full bg-carbon-black py-24 md:py-32" id="poles">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 border-b border-white/10 pb-10">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 02 — NOS PROGRAMMES</span>
+<h2 class="font-headline-xl text-headline-xl uppercase text-pure-white tracking-tight mt-2">
+            Trois pôles <span class="text-transparent bg-clip-text bg-gradient-to-r from-pure-white to-primary-fixed">d'excellence.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Du pilotage pur au volant de prototypes de pointe jusqu’aux séminaires exclusifs d’entreprise, explorez un éventail unique d'ingénierie sportive.
+        </p>
+</div>
+<!-- 3 Massive Full-Bleed Editorial Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- CARD 01: RACING -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container-low border border-white/10 hover:border-primary-container transition-all duration-500 hover:shadow-[0_24px_50px_rgba(0,0,0,0.9)] flex flex-col justify-between" id="racing-pillar">
+<!-- Full Bleed Image Block with Zoom -->
+<div class="relative aspect-[16/11] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" data-alt="Prototype LMP3 blue racecar cockpit view with digital telemetry screen, carbon steering wheel with paddle shifts, inside Pegasus racing garage ready for competition session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUPYnaNdUE-cZUqNjkc8n0Nchc9rt_maj8B9WjfbVOEX1UdL3f49HtIdavkYETxdSdyWrPXRY-j2OdeyWZrjDlP8_ot-Wnj-qR1vw4aD9FjJS8t0IS0xXddQuXN3nWKO59mVMj2YZiXaz0JpcZAdOgYdZaGguCnOri_fojLjK_X_B4KgsV7n7LTvSV7PBPXG4LxL2SP80qnYG8-MRD-HsDs7vtwfv2hewtG_hErflcJA06gkExYa8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/30 to-transparent"></div>
+<!-- Top Overlay Badges & Big Number -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/15 font-index-marker text-index-marker text-electric-cyan uppercase">
+                PÔLE OFFICIEL
+              </span>
+<span class="font-headline-xl text-headline-xl font-bold text-white/20 group-hover:text-electric-cyan/60 transition-colors">01</span>
+</div>
+</div>
+<!-- Content Block -->
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-pure-white uppercase font-bold tracking-tight mb-2 group-hover:text-primary transition-colors">Racing</h3>
+<p class="font-index-marker text-index-marker text-electric-cyan mb-4 uppercase">Compétition &amp; Engagement Officiel</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Accompagnement pilote clé en main, team management, ingénieurs data dédiés et logistique internationale pour championnats d'endurance sprint et 24H.
+              </p>
+</div>
+<div class="pt-6 border-t border-white/10 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-pure-white group-hover:text-electric-cyan transition-colors" href="#contact">
+<span class="underline underline-offset-4 decoration-primary">Explorer le Pôle Racing</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<span class="material-symbols-outlined text-outline group-hover:text-electric-cyan transition-colors">sports_score</span>
+</div>
+</div>
+</div>
+<!-- CARD 02: TRACKDAY -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container-low border border-white/10 hover:border-primary-container transition-all duration-500 hover:shadow-[0_24px_50px_rgba(0,0,0,0.9)] flex flex-col justify-between" id="trackday-pillar">
+<!-- Full Bleed Image Block with Zoom -->
+<div class="relative aspect-[16/11] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" data-alt="Sports car GT3 attacking race track asphalt curbs on a clear racing day with tire marks, technical apex racing lines, European circuit atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOEa30iwSgOVWFpeqHz_tSRBCVJW79EP8Ma7ss60R7Z22jGIzFwFpj8tzd7J59RBP6jVfJZyoplNwVJ5pr4J-UP7fHGRD4RqQ4X-DdjWAl4tP02Tp4mSQwgJAVRaKwtgRHd2ltjR5tw70yLPjs1PD-73WoRaDgpKVB3s6DMJOWoBczQ2s_3rZ0cb3UEzNch6kgiMP3pAwn4ljSk59zRoZ321TCPC1ELC4ekB1vksgI57lTuWypGng"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/30 to-transparent"></div>
+<!-- Top Overlay Badges & Big Number -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/15 font-index-marker text-index-marker text-electric-cyan uppercase">
+                CIRCUIT &amp; COACHING
+              </span>
+<span class="font-headline-xl text-headline-xl font-bold text-white/20 group-hover:text-electric-cyan/60 transition-colors">02</span>
+</div>
+</div>
+<!-- Content Block -->
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-pure-white uppercase font-bold tracking-tight mb-2 group-hover:text-primary transition-colors">Trackday</h3>
+<p class="font-index-marker text-index-marker text-electric-cyan mb-4 uppercase">Journées Circuit &amp; Coaching Pilote</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Roulage libre ou encadré, coaching personnalisé par nos pilotes titulaires Le Mans, mise au point de votre véhicule personnel ou location de sportives d'exception.
+              </p>
+</div>
+<div class="pt-6 border-t border-white/10 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-pure-white group-hover:text-electric-cyan transition-colors" href="#contact">
+<span class="underline underline-offset-4 decoration-primary">Explorer Trackday</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<span class="material-symbols-outlined text-outline group-hover:text-electric-cyan transition-colors">timer</span>
+</div>
+</div>
+</div>
+<!-- CARD 03: EVENT -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container-low border border-white/10 hover:border-primary-container transition-all duration-500 hover:shadow-[0_24px_50px_rgba(0,0,0,0.9)] flex flex-col justify-between" id="event-pillar">
+<!-- Full Bleed Image Block with Zoom -->
+<div class="relative aspect-[16/11] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" data-alt="Exclusive corporate VIP motorsport hospitality lounge overlooking active pit stop, champagne glasses and luxury racing experience for corporate guests" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsY03P9NAQuHGmClJnPHsw2xRswn1MNExkCGtzXyf5EV00SD9PsKSIdEZ3jkGmtjR_JcZgVQYsXgJc8tbwkFwjADd5LYQsH5zeqElWueRYd6-8nrTEYFU-w3uSrkRi4EBfFWorxDzu9SO1ar7Byz16RR6Lq75dObHIOW6zKWtDbwvHHCuM8Lj3FYf53fd0xsyp13UW-jqPji81zDiGrBgiTrVntGTQdPjCPG9KV508sQ9PquDqR_E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/30 to-transparent"></div>
+<!-- Top Overlay Badges & Big Number -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/15 font-index-marker text-index-marker text-electric-cyan uppercase">
+                B2B &amp; SÉMINAIRES
+              </span>
+<span class="font-headline-xl text-headline-xl font-bold text-white/20 group-hover:text-electric-cyan/60 transition-colors">03</span>
+</div>
+</div>
+<!-- Content Block -->
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-pure-white uppercase font-bold tracking-tight mb-2 group-hover:text-primary transition-colors">Event</h3>
+<p class="font-index-marker text-index-marker text-electric-cyan mb-4 uppercase">Expériences &amp; Séminaires VIP</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Baptêmes de piste à haute vitesse, challenges simulateur professionnels, séminaires B2B et journées d'immersion totale au cœur du team pour vos partenaires.
+              </p>
+</div>
+<div class="pt-6 border-t border-white/10 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-pure-white group-hover:text-electric-cyan transition-colors" href="#contact">
+<span class="underline underline-offset-4 decoration-primary">Explorer Event VIP</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<span class="material-symbols-outlined text-outline group-hover:text-electric-cyan transition-colors">corporate_fare</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION D — INGENIERIE DE PRECISION (Deep Navy #091D35 & MoTeC Telemetry)
+       ========================================================================= -->
+<section class="w-full bg-[#091D35] py-24 md:py-32 relative border-t border-white/10" id="ingenierie">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Pillar Info Blocks -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="flex items-center gap-2 px-3 py-1 rounded bg-black/40 border border-white/10 w-fit mb-4">
+<span class="w-2 h-2 rounded-full bg-electric-cyan"></span>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 03 — MÉTHODOLOGIE &amp; RIGUEUR</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-pure-white tracking-tight mb-6">
+            L'exigence de la <br/>
+<span class="text-electric-cyan">compétition internationale.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-2xl font-light leading-relaxed">
+            En endurance, la victoire se prépare des mois avant le drapeau vert. Nous appliquons les méthodes éprouvées du Mans à chaque voiture passant par notre atelier de Geispolsheim.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Pillar 1 -->
+<div class="flex flex-col p-6 rounded bg-surface-container-high/40 border border-white/10 hover:border-electric-cyan/40 transition-colors">
+<div class="w-10 h-10 rounded bg-primary-container/40 flex items-center justify-center text-electric-cyan mb-4">
+<span class="material-symbols-outlined">flag</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-pure-white font-semibold mb-2">Team Management &amp; Stratégie</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Gestion des ravitaillements, tactique météo et communication radio permanente pour optimiser chaque relais en piste.
+              </p>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col p-6 rounded bg-surface-container-high/40 border border-white/10 hover:border-electric-cyan/40 transition-colors">
+<div class="w-10 h-10 rounded bg-primary-container/40 flex items-center justify-center text-electric-cyan mb-4">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-pure-white font-semibold mb-2">Télémétrie &amp; Châssis</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Analyse comparative des données pilotes (MoTeC, Cosworth), réglages de géométrie laser, pesée aux balances et aéro sur mesure.
+              </p>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col p-6 rounded bg-surface-container-high/40 border border-white/10 hover:border-electric-cyan/40 transition-colors">
+<div class="w-10 h-10 rounded bg-primary-container/40 flex items-center justify-center text-electric-cyan mb-4">
+<span class="material-symbols-outlined">build</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-pure-white font-semibold mb-2">Mécanique d'Endurance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Une équipe technique aguerrie aux interventions express et à la reconstruction rapide sous haute pression.
+              </p>
+</div>
+<!-- Pillar 4 -->
+<div class="flex flex-col p-6 rounded bg-surface-container-high/40 border border-white/10 hover:border-electric-cyan/40 transition-colors">
+<div class="w-10 h-10 rounded bg-primary-container/40 flex items-center justify-center text-electric-cyan mb-4">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-pure-white font-semibold mb-2">Logistique Globale</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Flotte de semi-remorques ateliers, fret aérien et maritime pour acheminer bolides et équipements sur tous les continents.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Side Race Rig & Telemetry Console -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-lg overflow-hidden aspect-[4/5] bg-surface-container shadow-2xl border border-white/15">
+<img class="w-full h-full object-cover" data-alt="Race engineer analyzing dual telemetry screens during Le Mans 24 hour race, displaying colorful velocity curves, tire pressures, and live track sector times in a focused dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXUMmZKJ4lGjF7ksapqWRDn_ES2d9xin_NIxKpT4vD8IDn7uh6ebBU8BGjukhRZNApc9i5ExIL1_5IMNR2iIurQhfHoB_V_MlDNx3CqIp26dAceVvFkblvwu98PltHfSytQ5fw26B28U1h2AUIQTLRa3A5anPqWRwjLj1CyraYBbHQEz4s-6Z2aeSd9dFKdVN_i9mq683CUACJpqON4OoulLpcO68L6tETakthx67AtDr0pItRM5M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#091D35] via-transparent to-transparent"></div>
+<!-- Live Status Overlay Chip & MoTeC Wave Graphic -->
+<div class="absolute bottom-6 left-6 right-6 p-5 rounded bg-surface-container-lowest/90 backdrop-blur-md border border-white/15 shadow-xl">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-electric-cyan text-base">monitor_heart</span>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">MoTeC TELEMETRY BENCH v4.2</span>
+</div>
+<span class="font-index-marker text-index-marker text-speed-crimson uppercase flex items-center gap-1.5 px-2 py-0.5 rounded bg-speed-crimson/10 border border-speed-crimson/30">
+<span class="w-1.5 h-1.5 rounded-full bg-speed-crimson animate-ping"></span> LIVE SECTOR
+                </span>
+</div>
+<!-- Telemetry Data Progress Bars -->
+<div class="space-y-2 mb-3">
+<div>
+<div class="flex justify-between text-[11px] font-index-marker text-on-surface-variant mb-1">
+<span>SUSPENSION CALIBRATION (F/R)</span>
+<span class="text-electric-cyan">94.8% OPTIMAL</span>
+</div>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-electric-cyan h-full w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[11px] font-index-marker text-on-surface-variant mb-1">
+<span>ENGINE MAP // PEAK TORQUE RPM</span>
+<span class="text-primary-fixed">6,850 RPM</span>
+</div>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[82%]"></div>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Acquisition continue en temps réel : cartographies injection, géométrie et aéro dynamiques.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION E — GALERIE EDITORIALE & ATMOSPHERE DE PISTE
+       ========================================================================= -->
+<section class="w-full bg-surface-container-lowest py-24 md:py-32">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 border-b border-white/10 pb-8">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 04 — IMMERSION</span>
+<h2 class="font-headline-xl text-headline-xl uppercase text-pure-white tracking-tight mt-2">
+            Au cœur de <span class="text-secondary">la trajectoire.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          Instantanés de course, travail minutieux au box et adrénaline partagée entre pilotes et mécaniciens.
+        </p>
+</div>
+<!-- Asymmetrical Editorial Photo Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Mosaic Feature 1 -->
+<div class="md:col-span-8 relative rounded overflow-hidden aspect-[16/10] bg-surface-container group border border-white/10">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Pegasus Racing prototype racecar performing rapid pit stop at Circuit de Spa-Francorchamps, mechanics refueling and changing tires, high energy motorsport atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT90X9UqalyImFvUCXAlprxBzC4e_yIvOzTztbBqpn5q8yCEsy_bqtUJyFJ1jBDsdkr28Y60yPS5h0GWi_eJ6HYhbyZcdWMr25SAktXYPkiHFHz03-QhgZmtSh7nJC4GF7V5mrivWzvMpbYCtAyrSSEy99KjPrsaiLYJqzIbuXyrzfyHksvsgfc1U3lqMDSZJ4RGPafZRRghlF9Ng-tKEmqfTWPoKM6Wo21SQE5udqcuIL5hQiQpQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Circuit de Spa-Francorchamps</span>
+<p class="font-headline-sm text-headline-sm text-pure-white font-semibold">Ravitaillement chronométré &amp; gestion des pneumatiques</p>
+</div>
+</div>
+<!-- Medium Mosaic Feature 2 -->
+<div class="md:col-span-4 relative rounded overflow-hidden aspect-[4/5] bg-surface-container group border border-white/10">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Racing driver with helmet visor down reflecting track safety lights before getting into the car, extreme concentration and adrenaline, dramatic low key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4o80VeiOt8C9QuHDiySg9_AvogsKjPLZ2KUqyol2WIlswN-1aTj4KRsrHbVVPDuajhHtGfgw6hcjbTpYJ4O0YtpbsNwMD-XUvObkur_TP5uKvuooNgkJajv1NbraISHkzPQJI8plSH8D99Lh2ZqN7HTo1Lowhuoo1YYmpHF_Da5rkswmwbyIA9_sr-dWpsOh7Ca-Mc-8FE1GJ68SmOPWToo9TSysjItXKegb4GKUCyPYPNg_UxuE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/90 via-transparent to-transparent opacity-85"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Concentration Pilote</span>
+<p class="font-headline-sm text-headline-sm text-pure-white font-semibold">Le focus absolu avant le relais</p>
+</div>
+</div>
+<!-- Mosaic Feature 3 -->
+<div class="md:col-span-4 relative rounded overflow-hidden aspect-[4/3] bg-surface-container group border border-white/10">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Detailed macro shot of modern racing car steering wheel loaded with buttons, rotaries, telemetry display in carbon fiber finish, inside prototype cockpit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHXWsA4F3lHiCQt08xMYnzithqg838hbz7dHHKHk4tNmh0R3oQJ6AhRUsgnoXQUdFZdBKLcAbaNJGDqPSFLk7I5PdtGKwA6d2Ek6RBbrdI9Q5UJR4m6apsrYQk7FjnmI-x7UOt4K7-JKEZ3LhnxabAW4S5YxnicQwz1UPoY7Kr2TAiAUBkk3AkJ1ByGNsI4uTt6I3OAZ5feIO7h9EokBKmxyYyvygtl9yAbt9-un3INGGCZJ30N4w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/85 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-index-marker text-index-marker text-outline uppercase text-[10px]">Cockpit Interface</span>
+<p class="font-body-sm text-body-sm text-pure-white font-semibold">Commandes télémétriques &amp; palettes</p>
+</div>
+</div>
+<!-- Mosaic Feature 4 -->
+<div class="md:col-span-4 relative rounded overflow-hidden aspect-[4/3] bg-surface-container group border border-white/10">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Modern race workshop in Geispolsheim with multiple GT cars lifted on hydraulic ramps, spotless epoxy floor and organized precision tooling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOsIlgSGlD5m7339ln9_XUdKh6LFhcQzdXSoj1FIrME1lTbBLRZt4l6jPCOAGvMllhBWOe8rFgGWc-RmAra53PVMYAWi9bZj-aNnc6piIPUk--gHDj7AvO1ABhpPO0U-KbtvVzX_HXGxGZ3JCQM5VnVnRNA679Xcusz5AuX4GvASB6apUVU1x7a9VYCwWSTmFpuzwvp57XDpaYZ-7xaSv9ClJW6DojXk7rxrHgiCc55A4dd0C8teI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/85 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-index-marker text-index-marker text-outline uppercase text-[10px]">Atelier Alsace</span>
+<p class="font-body-sm text-body-sm text-pure-white font-semibold">Préparation &amp; Métrologie Châssis</p>
+</div>
+</div>
+<!-- Mosaic Feature 5 -->
+<div class="md:col-span-4 relative rounded overflow-hidden aspect-[4/3] bg-surface-container group border border-white/10">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Line of gentleman drivers and instructors debriefing track session over circuit map and sector split times in Pegasus pit garage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChi9-VRRGypBtaE5-ygiHrnop2eoc_7RcoceDDv_PkrRkc-mIg6re1OcFQyOCtpm90gELbCcNLdvbL45owI87jfG9YOpTuTg8NCuoDvS9PlBIAIDRWIR5LRIXNbVt29Ea6ruQchpaCUE1cjAwgXMsBCdHpX3nfQQ4aXHad4IgTZhNtreNmkLnXUcpRAHRNajDyEc48MHd5LptJiR0TGHmRVihhM2FayDWgZZ8TkpvWFnehjUUaTac"/>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black/85 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-index-marker text-index-marker text-outline uppercase text-[10px]">Coaching Pilote</span>
+<p class="font-body-sm text-body-sm text-pure-white font-semibold">Débriefing Vidéo &amp; Télémétrie</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       MAJOR PARALLAX BREAK 2 — NIGHT IMMERSION PIT-LANE (75vh Full Bleed)
+       ========================================================================= -->
+<section class="relative w-full h-[75vh] md:h-[80vh] overflow-hidden flex items-center justify-center border-y border-white/10" id="parallax-break-2">
+<!-- Parallax Texture -->
+<div class="parallax-bg absolute inset-0 -top-32 -bottom-32 w-full bg-cover bg-center transform-gpu" data-alt="Pegasus Racing mechanics adjusting telemetry cables and prototype racecar suspension inside an illuminated paddock garage at night" data-speed="0.2" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9u7qpbhn7ipdmBpP0pQhUFr3-OSR_ZaRlcOA3ocRP_Q_MuRhRn-kSsuLYkxNK4MahfmcEpPVqkH5Af37IExFrgzThEY-hZM413mFZFFw56800U66LNke39sWvffLJRyAQ6M0FAvjHtLd9Lbg_e-CyB2MJZRxRYPw8juGFkdPXCHxf5wJ8f0wptBXnge_IS9uwKeByJszLGuUT7iuLh82oaftSsDc_AsRtiv7VLDVO4BJZzxSwtXw');">
+</div>
+<!-- Night Pit Lane Cinematic Tint Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black via-[#091D35]/85 to-carbon-black/90 pointer-events-none"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-black/60 border border-electric-cyan/40 backdrop-blur-md mb-6">
+<span class="w-2 h-2 rounded-full bg-electric-cyan animate-pulse"></span>
+<span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">NOCTURNE 24 HEURES // PIT STRATEGY</span>
+</div>
+<h2 class="font-display-hero text-display-hero-mobile md:text-headline-xl lg:text-[54px] text-pure-white uppercase tracking-tight leading-[1.08] max-w-4xl mb-6 font-bold">
+        L'endurance est une <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-electric-cyan via-pure-white to-primary-fixed">science de précision.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl font-light leading-relaxed">
+        Quand la nuit tombe sur la ligne droite des Hunaudières, seule compte la parfaite symbiose entre l'ingénierie mécanique et l'instinct du pilote.
+      </p>
+<div class="mt-8 flex flex-wrap items-center justify-center gap-4 text-on-surface-variant font-index-marker text-index-marker uppercase">
+<span class="px-3 py-1 bg-surface-container-high/60 rounded border border-white/10">TELEMETRY: ACTIVE</span>
+<span class="px-3 py-1 bg-surface-container-high/60 rounded border border-white/10">TIRE STRATEGY: OPTIMAL</span>
+<span class="px-3 py-1 bg-surface-container-high/60 rounded border border-white/10">PACE: COMPETITIVE</span>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION F — FINAL CALL TO ACTION (Full-Width Cinematic Closing)
+       ========================================================================= -->
+<section class="relative w-full bg-carbon-black py-28 md:py-36 overflow-hidden border-t border-white/10" id="contact">
+<!-- Background Texture with Cinematic Racing Finish -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-30 mix-blend-luminosity scale-105" data-alt="Endurance racing car accelerating onto the straight under checkered flag lights at night, long exposure light trails, dark cinematic ambiance with blue racing tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5Zmy9cs32GE2c00haTbFnDlkqMGKJwcbZ2Sc0T4GieCOVzvwvnFQLLCujICCcJr4W-QHONByIEKrSju_GntpCwR49ltSGiZQ9UrZhLF8nt4g6jiusEGOwuIsd9vmJnOjLIZpIi60u6oBNdw2aNitJANhJXpVzI7RIwY6YStBTZivncjhAJeBAyKBcE1DWz4pNQvRV-E196YHUTRtlZOgppgYfMBioROJm1syEme1SlI9r5Bz6dAc')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-carbon-black via-[#091D35]/90 to-carbon-black"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/20 border border-primary/40 mb-6 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-speed-crimson animate-pulse"></span>
+<span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Saisons 2025 / 2026 Ouvertes</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl md:text-[54px] uppercase text-pure-white tracking-tight max-w-4xl mb-6 leading-[1.08] font-bold">
+        Votre prochain défi <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-pure-white via-primary to-electric-cyan">commence sur la grille.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 font-light leading-relaxed">
+        Que vous visiez une saison complète de compétition, un perfectionnement sur circuit mythique ou une immersion VIP pour votre entreprise, parlons de vos objectifs.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="inline-flex items-center justify-center gap-3 px-9 py-4 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_35px_rgba(0,229,255,0.45)] border border-electric-cyan/30 group" href="mailto:info@pegasus-racing.com">
+<span>Parlons de votre projet</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-surface-container-high/60 border border-white/20 text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider backdrop-blur-md hover:bg-pure-white hover:text-carbon-black transition-all duration-300 group" href="tel:0388659999">
+<span class="material-symbols-outlined text-base">call</span>
+<span>03 88 65 99 99</span>
+</a>
+</div>
+<!-- Workshop Coordinates Bar -->
+<div class="mt-14 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-8 text-on-surface-variant font-index-marker text-index-marker uppercase tracking-wider">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span>12 rue de l'ill, 67118 Geispolsheim</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-electric-cyan text-sm">mail</span>
+<a class="hover:text-pure-white transition-colors" href="mailto:info@pegasus-racing.com">info@pegasus-racing.com</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-speed-crimson text-sm">timer</span>
+<span>Lun - Ven : 08:30 — 18:30</span>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-carbon-black border-t border-white/10 pt-space-xl pb-space-lg text-on-surface-variant"><div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-white/5"><div class="lg:col-span-4 flex flex-col items-start"><div class="flex items-center gap-space-sm mb-space-md"><img alt="Image from https://www.pegasus-racing.com/wp-content/uploads/2024/08/logo-Pegasus-blanc-300x233.png" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNO5fzISyCxTSfif_JOAuVW-ZGyR0N4_HkzDzsutc1IlXaCkszlo7pSPP1WWnwAya4yV5ifQOsM55zfmXQNNGnnhsf6rCQfYpwwWYmvknSZhiThjX3I502dR-lVAt-PJ6CMKd8lXgYEBdOqleq9U9VvpWFJJRxy0pAUqW7QX3-MjrPZSee9DJv8B9aijRb7PKHbWXiORuGf3QhFsgYLzaQaI-1An3R_MDPuQN5hfwxIochtb7QfpPrSw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-pure-white">Pegasus Racing</span><span class="font-index-marker text-index-marker text-electric-cyan uppercase">Ecurie Automobile</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-md leading-relaxed">Team de compétition automobile &amp; atelier mécanique de pointe. Plus de 20 ans d'expertise au service de la performance et 4 participations aux 24 Heures du Mans.</p><div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-high/60 border border-white/10"><span class="w-2 h-2 rounded-full bg-speed-crimson animate-pulse"></span><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">24H Le Mans Veteran</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Navigation</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="accueil" href="#">Accueil</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="racing" href="#racing-pillar">Racing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="trackday" href="#trackday-pillar">Trackday</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="event" href="#event-pillar">Event</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="contact" href="#contact">Contact</a></nav></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Atelier &amp; Siège</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><p class="text-on-surface">12 rue de l'ill, 67118 Geispolsheim</p><p class="text-on-surface">Tél : 03 88 65 99 99</p><a class="text-primary hover:text-pure-white transition-colors" href="mailto:info@pegasus-racing.com">info@pegasus-racing.com</a><a class="text-primary hover:text-pure-white transition-colors" href="mailto:event@pegasus-racing.com">event@pegasus-racing.com</a></div><div class="mt-space-xs pt-space-xs border-t border-white/5 flex flex-col gap-1"><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" data-path="mentions-legales" href="#">Mentions Légales</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" data-path="politique-de-confidentialite" href="#">Politique de Confidentialité</a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Réseaux Officiels</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suivez le team en direct des circuits et des paddocks internationaux.</p><div class="flex items-center gap-space-sm"><a class="px-3 py-2 rounded bg-surface-container-high border border-white/10 hover:border-primary font-label-uppercase text-label-uppercase uppercase text-pure-white hover:text-primary transition-all flex items-center gap-1.5" href="https://facebook.com" rel="noopener noreferrer" target="_blank"><span>Facebook</span><span class="material-symbols-outlined text-sm">open_in_new</span></a><a class="px-3 py-2 rounded bg-surface-container-high border border-white/10 hover:border-primary font-label-uppercase text-label-uppercase uppercase text-pure-white hover:text-primary transition-all flex items-center gap-1.5" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span>Instagram</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-outline"><p>© 2025 Pegasus Racing. Tous droits réservés. Conçu pour la performance.</p><p class="font-index-marker text-index-marker text-on-surface-variant/70 uppercase">ALSACE // MOTORSPORT SPECIFICATION</p></div></div></footer>
+<!-- =========================================================================
+     NON-BLOCKING HIGH PERFORMANCE PARALLAX CONTROLLER
+     Uses requestAnimationFrame & respects prefers-reduced-motion
+     ========================================================================= -->
+<script>
+(function() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  const parallaxElements = document.querySelectorAll('.parallax-bg');
+  if (!parallaxElements.length) return;
+
+  let ticking = false;
+
+  function updateParallax() {
+    const scrollY = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+
+    parallaxElements.forEach((el) => {
+      const parent = el.parentElement;
+      if (!parent) return;
+
+      const rect = parent.getBoundingClientRect();
+      const parentTop = rect.top;
+      const parentHeight = rect.height;
+
+      // Only calculate if element is anywhere near the viewport
+      if (parentTop < windowHeight && parentTop + parentHeight > 0) {
+        const speed = parseFloat(el.getAttribute('data-speed')) || 0.2;
+        // Compute offset based on screen center
+        const offset = (parentTop - (windowHeight / 2)) * speed;
+        el.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0)`;
+      }
+    });
+
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  // Initial run
+  updateParallax();
+})();
+</script>
+</body></html>

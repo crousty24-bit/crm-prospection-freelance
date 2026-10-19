@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#7dd0ff", "electric-cyan": "#00E5FF", "inverse-primary": "#225eab", "surface-container-low": "#0e1c2c", "surface-tint": "#a9c7ff", "primary": "#a9c7ff", "speed-crimson": "#E11D48", "inverse-on-surface": "#243142", "tertiary": "#7dd0ff", "secondary": "#b5c7e7", "primary-container": "#1254a1", "on-secondary-fixed": "#081c34", "tertiary-fixed": "#c4e7ff", "on-tertiary-fixed-variant": "#004c69", "on-primary-fixed-variant": "#00468c", "on-secondary-fixed-variant": "#364862", "surface-container-highest": "#283647", "surface-container": "#122030", "on-primary-fixed": "#001b3d", "tertiary-container": "#005b7d", "on-secondary-container": "#a4b6d5", "secondary-fixed-dim": "#b5c7e7", "on-surface": "#d5e4fa", "outline-variant": "#424751", "surface-variant": "#283647", "background": "#051424", "on-secondary": "#1f314a", "secondary-container": "#364862", "on-primary": "#003063", "on-tertiary-fixed": "#001e2c", "inverse-surface": "#d5e4fa", "secondary-fixed": "#d4e3ff", "surface-container-high": "#1d2b3b", "on-surface-variant": "#c2c6d3", "on-error-container": "#ffdad6", "surface-container-lowest": "#020f1e", "primary-fixed": "#d6e3ff", "surface-bright": "#2c3a4b", "error": "#ffb4ab", "on-primary-container": "#afcbff", "carbon-black": "#040404", "on-background": "#d5e4fa", "on-tertiary": "#00344a", "surface": "#051424", "on-tertiary-container": "#85d2ff", "on-error": "#690005", "pure-white": "#FFFFFF", "primary-fixed-dim": "#a9c7ff", "light-surface": "#F4F7FA", "surface-dim": "#051424", "error-container": "#93000a", "outline": "#8c919c" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.75rem", "gutter-desktop": "2rem", "space-xl": "3rem", "margin-desktop": "3.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "display-hero-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "body-lg": [ "Montserrat" ], "stat-counter": [ "Space Grotesk" ], "body-md": [ "Montserrat" ], "body-sm": [ "Montserrat" ], "headline-xl-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-uppercase": [ "Montserrat" ], "display-hero": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "index-marker": [ "Space Mono" ] }, "fontSize": { "display-hero-mobile": [ "40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "stat-counter": [ "56px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl-mobile": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-uppercase": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" } ], "display-hero": [ "72px", { "lineHeight": "76px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-xl": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "index-marker": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" } ] } } } }</script></head><body class="bg-carbon-black text-on-surface font-body-md selection:bg-primary-container selection:text-pure-white antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-[#091D35]/90 backdrop-blur-md border-b border-white/10"><div class="h-20 max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm group" data-path="accueil" href="#"><img alt="Pegasus Racing Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNO5fzISyCxTSfif_JOAuVW-ZGyR0N4_HkzDzsutc1IlXaCkszlo7pSPP1WWnwAya4yV5ifQOsM55zfmXQNNGnnhsf6rCQfYpwwWYmvknSZhiThjX3I502dR-lVAt-PJ6CMKd8lXgYEBdOqleq9U9VvpWFJJRxy0pAUqW7QX3-MjrPZSee9DJv8B9aijRb7PKHbWXiORuGf3QhFsgYLzaQaI-1An3R_MDPuQN5hfwxIochtb7QfpPrSw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-pure-white group-hover:text-primary transition-colors">Pegasus</span><span class="font-index-marker text-index-marker text-electric-cyan uppercase -mt-1">Racing</span></div></a></div><nav class="hidden lg:flex items-center gap-space-sm p-1.5 rounded-full bg-surface-container-lowest/80 border border-white/5 backdrop-blur-xl" data-active-classes="bg-primary-container text-pure-white font-bold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.25)]"><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase transition-colors" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase transition-colors" data-path="racing" href="#">Racing</a><a aria-current="page" class="px-space-md py-space-xs uppercase transition-colors bg-primary-container text-pure-white font-bold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.25)]" data-path="trackday" href="#">Trackday</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase transition-colors" data-path="event" href="#">Event</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-pure-white font-label-uppercase text-label-uppercase uppercase transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_20px_rgba(18,84,161,0.5)] group" data-path="contact" href="#contact-modal"><span>Nous contacter</span><span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-carbon-black min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION (88vh full-bleed with smooth subtle parallax) -->
+<section class="relative w-full -mt-20 overflow-hidden bg-carbon-black border-b border-white/10 min-h-[88vh] flex items-end" id="hero-section">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="w-full h-[120%] -top-[10%] absolute bg-cover bg-center brightness-[0.42] saturate-[1.15] will-change-transform" id="hero-parallax-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9Mw5d3Vwplccp2dLN3g_pOI794r7dyrfCJdPXBHstn_HVKEkQf4MmbA94rvCf_qczNHUKANCWL9v_Ky2oTXBTsOGDE0Jd5rtwbMVbJ0id_9zHr22f8NjQEdo5_3SathnCf7YRVP-RFnSkNRlBsEMRoPLiaPjNROwHEd-TIHXHlcw7nKlhdZYNGQog6oX2AUx0Wb301bvuPslgDI9ljExySJCAoCWsPIO6ehZpJnIflUkIrSSkIvA'); transform: translateY(0px);">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black via-carbon-black/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-carbon-black via-[#091D35]/75 to-transparent"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,229,255,0.12),transparent_60%)]"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop pt-44 pb-space-xl flex flex-col justify-end">
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#1254A1]/30 border border-[#00E5FF]/40 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-electric-cyan animate-pulse"></span>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">Saison Trackday 2025 // France &amp; Europe</span>
+</span>
+<span class="font-index-marker text-index-marker text-pure-white/70 uppercase">ALSACE MOTORSPORT DISCIPLINE</span>
+</div>
+<div class="max-w-4xl mb-space-lg">
+<h1 class="font-display-hero text-headline-xl md:text-display-hero uppercase tracking-tight text-pure-white leading-none mb-space-sm">
+          Le Circuit.<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-pure-white via-primary to-electric-cyan">Votre Terrain De Jeu.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Découvrez le plaisir du pilotage dans un environnement pensé pour la performance pure et la sécurité totale. L'expertise de 4 participations aux 24 Heures du Mans à votre service direct.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_24px_rgba(0,229,255,0.35)] group" href="#circuits">
+<span>Organiser votre expérience</span>
+<span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded bg-surface-container-high/60 border border-white/15 text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:border-primary hover:bg-surface-container-highest" href="#philosophie">
+<span class="material-symbols-outlined text-base text-electric-cyan">sports_motorsports</span>
+<span>Découvrir la formule</span>
+</a>
+</div>
+<!-- Quick Telemetry Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-xl mt-space-xl border-t border-white/10">
+<div class="border-l-2 border-primary/40 pl-3">
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase tracking-wider">Encadrement</span>
+<p class="font-headline-md text-headline-md text-pure-white font-bold tracking-tight">100% Compétition</p>
+</div>
+<div class="border-l-2 border-electric-cyan/40 pl-3">
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase tracking-wider">Assistance Piste</span>
+<p class="font-headline-md text-headline-md text-electric-cyan font-bold tracking-tight">Clé en Main</p>
+</div>
+<div class="border-l-2 border-primary/40 pl-3">
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase tracking-wider">Tracés Homologués</span>
+<p class="font-headline-md text-headline-md text-pure-white font-bold tracking-tight">Grade 1 &amp; FIA</p>
+</div>
+<div class="border-l-2 border-speed-crimson/40 pl-3">
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase tracking-wider">Data &amp; Vidéo</span>
+<p class="font-headline-md text-headline-md text-speed-crimson font-bold tracking-tight">Télémétrie Live</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 01: LA PHILOSOPHIE DU ROULAGE -->
+<section class="w-full py-space-xl md:py-28 bg-[#091D35]/40 border-b border-white/5 relative overflow-hidden" id="philosophie">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 01 — PHILOSOPHIE DU ROULAGE</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl uppercase text-pure-white mb-space-md leading-tight">
+          Vivre la piste sans contrainte mécanique.
+        </h2>
+<div class="w-16 h-1 bg-primary mb-space-md"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-md">
+          Vivez l'émotion brute du pilotage sur circuit fermé en toute sérénité. Pegasus Racing met à votre disposition les standards rigoureux d'une véritable écurie d'endurance internationale.
+        </p>
+<div class="p-space-md rounded bg-[#091D35]/80 border border-primary/20 mb-space-md shadow-lg">
+<p class="font-headline-sm text-headline-sm text-pure-white mb-1">
+            « Concentrez-vous uniquement sur vos trajectoires. »
+          </p>
+<p class="font-body-sm text-body-sm text-secondary">
+            Notre équipe technique dédiée s'occupe de l'intégralité de la logistique, de la gestion thermique des pneumatiques, des pressions à chaud et du ravitaillement.
+          </p>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm">check_circle</span>
+<span>Accueil privé en box VIP avec rafraîchissements et open-bar</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm">check_circle</span>
+<span>Atelier mobile complet présent sur chaque meeting</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm">check_circle</span>
+<span>Débriefing d'ingénierie après chaque relais de roulage</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="relative group rounded overflow-hidden border border-white/10 bg-surface-container">
+<div class="aspect-[4/5] w-full overflow-hidden">
+<img alt="Race engineer analyzing telemetry graphs on a laptop screen inside a professional garage pitbox" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3mS8FX2QKlzgtVvhZJ9ZElJbiAjMZSUeBvHb2ZUWZiBufJFsnXx7hhciSrHnT_2K03dD6vFSxT_mC7I3NtmNiDqA5O3U09cNaJkhzeVvuV5FzUoE-KU921oY-yuaRORoVdnT1o6dvvaKBzzkUL3fmO-ZLlWzpnwcq_Bh0czocWZ6z0lSxy-5q19CYa4HVHuGvsAXqp6qyGSBLzlp0txPg8VeFOGw9jbu1iApDqrfLxhMpGdTP5ZU"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black via-carbon-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-md">
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Ingénierie</span>
+<p class="font-headline-sm text-headline-sm text-pure-white uppercase">Analyse Télémétrique</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Acquisition de données capteur par capteur pour corriger chaque point de corde.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-md justify-between">
+<div class="relative group rounded overflow-hidden border border-white/10 bg-surface-container flex-1 flex flex-col">
+<div class="aspect-[16/10] w-full overflow-hidden">
+<img alt="Mechanics fitting racing slick tires on a high performance Porsche GT3 Cup in a clean illuminated pit stall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmdAQ1jOLae9btL9sAIeWz0RwxOw9iUsOGw1bRua06QITs_rN6iDKVmiRd7-xBptrBaZ58rWEHmSI8dwSjESnE42phoUvi0EOk6CXF7jKXFs4W-JcSrt4PnYkQPjuIEmJ-Go7i3EMfAjaQnlS_LWnFAnXJ_k5mvCT6OuJCNmvFYAyEAFfn9rqoxkHzEjAM8VxbVncG-ddZ3W2bp_ImhzcO9W49Lot9rMiphkr6zXpimWe6eEVw1P0"/>
+</div>
+<div class="p-space-md">
+<span class="font-index-marker text-index-marker text-speed-crimson uppercase">Support Piste</span>
+<p class="font-headline-sm text-headline-sm text-pure-white uppercase mt-1">Mécaniciens Dédiés</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Prise en charge immédiate à chaque retour au stand: couples, fluides, usure.</p>
+</div>
+</div>
+<div class="p-space-md rounded bg-[#091D35]/80 border border-white/10 flex items-center justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase">Temps de piste moyen</span>
+<p class="font-headline-md text-headline-md text-pure-white font-bold">5h à 7h Open Pitlane</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl">timer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 02: POUR TOUS LES PASSIONNÉS (2 COMPARISON CARDS) -->
+<section class="w-full py-space-xl md:py-28 bg-carbon-black border-b border-white/5">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 02 — FORMULES DE PILOTAGE</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl uppercase text-pure-white mt-space-xs">
+          Pour Tous les Passionnés
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Du premier contact avec le vibreur jusqu'à la chasse effrénée au dixième de seconde, notre structure module son accompagnement selon vos ambitions.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- CARD A: DÉBUTANTS -->
+<div class="rounded-lg bg-surface-container border border-white/10 overflow-hidden flex flex-col group hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/9] w-full overflow-hidden">
+<img alt="Driving coach sitting in passenger bucket seat providing intercom instruction to gentleman driver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIJXtE5D3JKpyKG7QIiSt0VazYc9DGJMSxqcQz3SX5MX6D6_GZ8HTBDNj5FRaoQtzU-I9vGj4-ePputM9eQMCFl7ECxA6G_uvpaj3W7VsAUWbuuVLdNqDxkCHQd5CEKTaMCng5kCgUX2loh-gOWE1mukazdu3R_gQ8NJW5ZyXy4DQpCHsTXR4w4i5YWIu4mjhjvlOk2cWAUTHFsOA1ql_z0CbKzTFfROQzOnzkj18Q4hkC9xdos6Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-primary/20 border border-primary/40 text-primary font-index-marker text-index-marker uppercase tracking-wider backdrop-blur-md">
+              Profil Découverte &amp; Initiation
+            </span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-lg text-headline-md md:text-headline-lg uppercase text-pure-white">
+                Pilotes Débutants
+              </h3>
+<span class="material-symbols-outlined text-primary text-2xl">school</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Prenez confiance en douceur dans un cadre sécurisé et bienveillant. Apprenez à exploiter la dynamique de votre auto sans risque de dépassement de limite.
+            </p>
+<ul class="space-y-space-xs mb-space-lg text-body-sm text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm mt-0.5">done</span>
+<span><strong>Initiation aux trajectoires idéales :</strong> points de braquage, de corde et de sortie.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm mt-0.5">done</span>
+<span><strong>Moniteurs diplômés BPJEPS :</strong> coaching embarqué avec intercom en temps réel.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm mt-0.5">done</span>
+<span><strong>Maîtrise dynamique :</strong> gestion du transfert de masse, freinage dégressif sans bloquer.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-electric-cyan text-sm mt-0.5">done</span>
+<span><strong>Roulage serein :</strong> respect des sessions par niveau de pilotage et des drapeaux.</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-white/5 flex items-center justify-between">
+<span class="font-index-marker text-index-marker text-on-surface-variant">OBJECTIF : MAÎTRISE DU VÉHICULE</span>
+<a class="font-label-uppercase text-label-uppercase text-primary hover:text-pure-white uppercase flex items-center gap-1 group/link" href="#contact-modal">
+<span>En savoir plus</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD B: CONFIRMÉS -->
+<div class="rounded-lg bg-surface-container border border-white/10 overflow-hidden flex flex-col group hover:border-speed-crimson/50 transition-all duration-300">
+<div class="relative aspect-[16/9] w-full overflow-hidden">
+<img alt="Aggressive track-spec endurance prototype car cutting an apex across kerbs at high speed" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNBcSNnPytak0ATELT-34TbHVP5R8QltihKyRrjQu56Hlw41zpL7Sjo4LJ2UCMym32bVAICFAUXEnYqRvgDupzQQ8oYg-jerqqf6rtQvmttXIwOoorGqtmuvKfl6fMhTxxEJiv-nAqZVjalHch_pSu8U7H2bk_taKW1_7-nJANM0UDdFW69d5R2dE38qcb-ougEg1HMCFU3hX586g210qzdIYhHHeKoLX--cCDrzGLpHyOglvR6OI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-speed-crimson/20 border border-speed-crimson/40 text-speed-crimson font-index-marker text-index-marker uppercase tracking-wider backdrop-blur-md">
+              Profil Performance &amp; Chrono
+            </span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-lg text-headline-md md:text-headline-lg uppercase text-pure-white">
+                Pilotes Expérimentés
+              </h3>
+<span class="material-symbols-outlined text-speed-crimson text-2xl">speed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Affûtez chaque freinage, traquez le dixième manquant et optimisez le comportement mécanique de votre châssis comme un pilote engagé aux 24H du Mans.
+            </p>
+<ul class="space-y-space-xs mb-space-lg text-body-sm text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-speed-crimson text-sm mt-0.5">done</span>
+<span><strong>Recherche du chrono absolu :</strong> analyse des delta temps secteur par secteur.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-speed-crimson text-sm mt-0.5">done</span>
+<span><strong>Optimisation châssis :</strong> réglage du carrossage, des barres antiroulis et amortisseurs.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-speed-crimson text-sm mt-0.5">done</span>
+<span><strong>Télémétrie avancée :</strong> analyse comparée MoTeC, accélérations latérales et régimes moteur.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-speed-crimson text-sm mt-0.5">done</span>
+<span><strong>Roulage intensif :</strong> logistique de carburant de course, réassort gommes slick et pluie.</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-white/5 flex items-center justify-between">
+<span class="font-index-marker text-index-marker text-on-surface-variant">OBJECTIF : PERFORMANCE CHRONOMÉTRÉE</span>
+<a class="font-label-uppercase text-label-uppercase text-speed-crimson hover:text-pure-white uppercase flex items-center gap-1 group/link" href="#contact-modal">
+<span>En savoir plus</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PARALLAX INTERLUDE SECTION (75vh edge-to-edge cinematic track photo with typography overlay) -->
+<section class="relative w-full h-[75vh] min-h-[500px] overflow-hidden flex items-center justify-center border-y border-white/10" id="interlude-section">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="w-full h-[130%] -top-[15%] absolute bg-cover bg-center brightness-[0.4] saturate-[1.2] will-change-transform" id="interlude-parallax-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCorgFgGAq2I8Q-4JnuRQ42leSvGmSZsp8TLu7sDM6DuSEU5OAVP9Qegqv0czIWYRW3DeZcpFF8MB-cNoNXxsDKzTxpJ6L7WHnHCi-A6-M51k82wNSkCp1wR9nux4R9dapWgtBVOjPXmQloiHoOw-pGNNe-kKvZHwjimRjdXQPAq7pOfKqlhkaIDedWcJh7gFN5XTGfwEzUmAOAXTue5p3CkqYmQNldz_DFZZP8UhdHgMTT4jFxO_0'); transform: translateY(0px);">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-carbon-black via-transparent to-carbon-black"></div>
+<div class="absolute inset-0 bg-[#091D35]/50 backdrop-contrast-125"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto px-margin text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-pure-white/10 border border-white/20 backdrop-blur-md mb-space-md">
+<span class="w-2 h-2 rounded-full bg-electric-cyan"></span>
+<span class="font-index-marker text-index-marker text-pure-white uppercase tracking-widest">Immersion Totale</span>
+</div>
+<h2 class="font-display-hero text-headline-lg md:text-5xl lg:text-6xl uppercase tracking-tight text-pure-white leading-tight mb-space-md">
+        Le frisson de la piste,<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary-fixed-dim to-electric-cyan">l'exigence d'une écurie.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-lg">
+        L'atmosphère unique des stands, l'odeur de la gomme sur l'asphalte chauffé et la confiance absolue d'un bolide inspecté par des spécialistes Le Mans.
+      </p>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_20px_rgba(0,229,255,0.4)]" href="#circuits">
+<span>Explorer les tracés</span>
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+</a>
+</div>
+</section>
+<!-- SECTION 03: UNE EXPÉRIENCE ENCADRÉE & CLÉ EN MAIN (4 GUARANTEES) -->
+<section class="w-full py-space-xl md:py-24 bg-surface-container-low border-b border-white/5">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 03 — LES STANDARDS PEGASUS</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl uppercase text-pure-white mt-space-xs mb-space-sm">
+          Une Expérience Encadrée &amp; Clé en Main
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Aucun compromis sur la sécurité, l'intégrité mécanique et la sérénité des pilotes. Découvrez les 4 engagements fondamentaux qui régissent chaque journée trackday.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Guarantee 1 -->
+<div class="p-space-lg rounded bg-[#091D35]/50 border border-white/10 hover:border-primary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-primary-container/30 border border-primary/20 flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-2xl">engineering</span>
+</div>
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase">Garantie 01</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-pure-white mt-1 mb-space-xs">
+              Encadrement Professionnel
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Présence constante d'ingénieurs et de mécaniciens de compétition habitués aux exigences des championnats internationaux WEC et ELMS.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-white/5">
+<span class="font-index-marker text-[10px] text-electric-cyan uppercase tracking-wider">TEAM 24H DU MANS</span>
+</div>
+</div>
+<!-- Guarantee 2 -->
+<div class="p-space-lg rounded bg-[#091D35]/50 border border-white/10 hover:border-primary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-primary-container/30 border border-primary/20 flex items-center justify-center mb-space-md text-electric-cyan">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase">Garantie 02</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-pure-white mt-1 mb-space-xs">
+              Contrôle Technique Sécurité
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Inspection minutieuse de chaque véhicule avant le roulage : état des pneumatiques, liquide de frein haute température, disques et fixations.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-white/5">
+<span class="font-index-marker text-[10px] text-electric-cyan uppercase tracking-wider">SCRUTINEERING COMPLET</span>
+</div>
+</div>
+<!-- Guarantee 3 -->
+<div class="p-space-lg rounded bg-[#091D35]/50 border border-white/10 hover:border-primary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-primary-container/30 border border-primary/20 flex items-center justify-center mb-space-md text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-2xl">flag</span>
+</div>
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase">Garantie 03</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-pure-white mt-1 mb-space-xs">
+              Briefing &amp; Respect des Règles
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Briefing obligatoire sur les procédures de dépassement, le code sportif, la signification des drapeaux et le protocole d'intervention d'urgence.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-white/5">
+<span class="font-index-marker text-[10px] text-electric-cyan uppercase tracking-wider">CIVISME EN PISTE</span>
+</div>
+</div>
+<!-- Guarantee 4 -->
+<div class="p-space-lg rounded bg-[#091D35]/50 border border-white/10 hover:border-primary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-primary-container/30 border border-primary/20 flex items-center justify-center mb-space-md text-speed-crimson">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<span class="font-index-marker text-index-marker text-on-surface-variant uppercase">Garantie 04</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-pure-white mt-1 mb-space-xs">
+              Convivialité &amp; Passion
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Une communauté authentique de passionnés, des repas soignés dans le paddock et des moments de partage privilégiés loin de la pression du quotidien.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-white/5">
+<span class="font-index-marker text-[10px] text-electric-cyan uppercase tracking-wider">ESPRIT CLUB DE COURSE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: CIRCUITS & DESTINATIONS -->
+<section class="w-full py-space-xl md:py-28 bg-carbon-black border-b border-white/5" id="circuits">
+<div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase tracking-widest">/ 04 — LE TOUR D'EUROPE</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl uppercase text-pure-white mt-space-xs">
+          Circuits &amp; Destinations
+        </h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-speed-crimson animate-pulse"></span>
+<span class="font-index-marker text-index-marker text-on-surface uppercase">Calendrier Européen Régulier</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Circuit 1: Paul Ricard -->
+<div class="group rounded bg-surface-container border border-white/10 overflow-hidden flex flex-col hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Circuit Paul Ricard Le Castellet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6_ILT_GK5VsPpjlYhoyvJ5H0jgzOB5zn_YHkh_TMjKyFjzJSwWrXaTau_Hf-ATj2ydU5o5reg2Z_cfifQdL4a6i-N4I6fe363P9Z5_vAtAHro1G_Ei7QQe_KGLVby4i3tY6znzF3fw6O7FY3302BhliK1IRJ5_eEaURHl7X7M9J0Eqg0BjhIc8vFdigui_2U7UpYwQLfUjvYmd8pctcF2-Cv1Pjg5iICTgZ5kt4D8x-1KkHkxVpk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-carbon-black/80 border border-white/10 font-index-marker text-index-marker text-pure-white">GRADE 1 FIA</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Var, France</span>
+<h3 class="font-headline-md text-headline-md uppercase text-pure-white mt-0.5">Circuit Paul Ricard</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              La référence absolue du roulage haute vitesse avec la mythique ligne droite du Mistral et la courbe de Signes prise à plein régime.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-white/5 flex items-center justify-between text-on-surface-variant font-index-marker text-index-marker">
+<span>LONGUEUR : 5.8 KM</span>
+<span class="text-primary font-bold">15 VIRAGES</span>
+</div>
+</div>
+</div>
+<!-- Circuit 2: Spa-Francorchamps -->
+<div class="group rounded bg-surface-container border border-white/10 overflow-hidden flex flex-col hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Legendary Circuit de Spa-Francorchamps" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCorgFgGAq2I8Q-4JnuRQ42leSvGmSZsp8TLu7sDM6DuSEU5OAVP9Qegqv0czIWYRW3DeZcpFF8MB-cNoNXxsDKzTxpJ6L7WHnHCi-A6-M51k82wNSkCp1wR9nux4R9dapWgtBVOjPXmQloiHoOw-pGNNe-kKvZHwjimRjdXQPAq7pOfKqlhkaIDedWcJh7gFN5XTGfwEzUmAOAXTue5p3CkqYmQNldz_DFZZP8UhdHgMTT4jFxO_0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-carbon-black/80 border border-white/10 font-index-marker text-index-marker text-pure-white">GRADE 1 FIA</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Ardennes, Belgique</span>
+<h3 class="font-headline-md text-headline-md uppercase text-pure-white mt-0.5">Spa-Francorchamps</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Le toboggan des Ardennes. Eau Rouge, Raidillon, Blanchimont : l'un des tracés les plus exaltants et exigeants du sport automobile mondial.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-white/5 flex items-center justify-between text-on-surface-variant font-index-marker text-index-marker">
+<span>LONGUEUR : 7.0 KM</span>
+<span class="text-primary font-bold">19 VIRAGES</span>
+</div>
+</div>
+</div>
+<!-- Circuit 3: Anneau du Rhin -->
+<div class="group rounded bg-surface-container border border-white/10 overflow-hidden flex flex-col hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Circuit de l Anneau du Rhin in Alsace" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgT01JC3AoyAopGOgzXN4bizXZsicdDq4ves1khUaq32BZEJDl0SZeCI_CWw3H5mo2kbC4-xzpfXcuw5IMEnEzBXyYs4o7KeTLFrNs9HDGGfmpXc6vHG-obQ-j-CK1Osvzd0MEOkZYCdWtPIUZ3pwKOETjg802Qau912-4VL2ZyTXmo3dekE54tYkO7dv9Y8Q0-6lJgyyVc-P2YE5ta45KZYWArIDW_wFmexw26vfzukvw1fqzN-g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-carbon-black/80 border border-white/10 font-index-marker text-index-marker text-electric-cyan">BASE ALSACE</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Alsace, France</span>
+<h3 class="font-headline-md text-headline-md uppercase text-pure-white mt-0.5">L'Anneau du Rhin</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Notre circuit d'entraînement à domicile au cœur de l'Alsace. Idéal pour les séances de mise au point, le coaching rapproché et le déverminage.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-white/5 flex items-center justify-between text-on-surface-variant font-index-marker text-index-marker">
+<span>LONGUEUR : 3.7 KM</span>
+<span class="text-primary font-bold">LOCAL HOME TRACK</span>
+</div>
+</div>
+</div>
+<!-- Circuit 4: Dijon-Prenois -->
+<div class="group rounded bg-surface-container border border-white/10 overflow-hidden flex flex-col hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Circuit de Dijon-Prenois" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZnYSpia73j8eiLHkC9elp1PC_8h6X5vvgPgUR40tTotSefR3UAPM3HHsDMsRx9DV4WS5i78n-EK13EwP4kACtN5tgzOesJs3kd3nsuNGs81hd-o82yUKI4g5mhHdoA380OQuqazrV7Hu8scaxusZBbSB0j2GtjOx2fOExpFtIrx0j-7s4Ya13CUjB7-F3b6x_fXAMG-Yf2pX-_zvsJ4d7lTLdOBziJbn3OFPf1QkUr13MpEg9JmQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-carbon-black/80 border border-white/10 font-index-marker text-index-marker text-pure-white">HISTORIQUE</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Bourgogne, France</span>
+<h3 class="font-headline-md text-headline-md uppercase text-pure-white mt-0.5">Dijon-Prenois</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Théâtre du légendaire duel Arnoux-Villeneuve en 1979. Relief naturel, virages aveugles et vitesses moyennes exceptionnelles.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-white/5 flex items-center justify-between text-on-surface-variant font-index-marker text-index-marker">
+<span>LONGUEUR : 3.8 KM</span>
+<span class="text-primary font-bold">8 VIRAGES RAPIDES</span>
+</div>
+</div>
+</div>
+<!-- Circuit 5: Magny-Cours -->
+<div class="group rounded bg-surface-container border border-white/10 overflow-hidden flex flex-col hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Circuit de Nevers Magny-Cours" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASiUxegVmFBmWHj8qPaMzNxHHZfKmjom58htQX8SNtDYd0EeyRmXt4m18ftVSGbmhOcYRS_pNCni_lxDFYmAozsv9lQ7sPrHy9IgHlslWVcSoSjsuwcZAepPSnEhox4nDGwrRXQCOsPCBaF8q_RTMoA2bI9MEv6_u98Kw2bSQXhmWLPoj9BfwffyZbevWoAyzP1oLnWPytlv1NC_pzMo860U6d4SSmjOjHG4Mohk6j23xO8FtvkUE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-carbon-black/80 border border-white/10 font-index-marker text-index-marker text-pure-white">GRADE 1 FIA</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Nièvre, France</span>
+<h3 class="font-headline-md text-headline-md uppercase text-pure-white mt-0.5">Circuit de Magny-Cours</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Ancien tracé du Grand Prix de France de Formule 1. Un tracé complet mêlant gros freinages à l'épingle d'Adélaïde et enchaînements rapides.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-white/5 flex items-center justify-between text-on-surface-variant font-index-marker text-index-marker">
+<span>LONGUEUR : 4.4 KM</span>
+<span class="text-primary font-bold">17 VIRAGES</span>
+</div>
+</div>
+</div>
+<!-- Circuit 6: Nürburgring Nordschleife -->
+<div class="group rounded bg-surface-container border border-white/10 overflow-hidden flex flex-col hover:border-primary/50 transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Nurburgring Nordschleife the Green Hell" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfbR5qGOjUcRUdcF6BK1FGQoWIikD4VLdi4z89op1Eq9Mtr08LNG9bf3bIenx_73VoGP2bbZx2_N6vqtWpLnehvDvuSu3rPJjfW8co0VZ1Y6rBjL3Tg26VWvYATbc8cVf6Dlitk4Ab93sNsrHcTa5O7vLKJrLGUCYCKUKou7hKHlT_A6_Mon6trFC2RU_bpy4WMYaCYHq8ZK8PjrAK3PjarZBZFULhe7tYu4EHPhDaAKCab8lf-9U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-carbon-black/80 border border-white/10 font-index-marker text-index-marker text-speed-crimson">L'ENFER VERT</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-index-marker text-index-marker text-electric-cyan uppercase">Eifel, Allemagne</span>
+<h3 class="font-headline-md text-headline-md uppercase text-pure-white mt-0.5">Nürburgring Nordschleife</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              L'ultime défi mondial. 20,8 kilomètres d'asphalte mythique à travers la forêt de l'Eifel pour les pilotes en quête de légende absolue.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-white/5 flex items-center justify-between text-on-surface-variant font-index-marker text-index-marker">
+<span>LONGUEUR : 20.8 KM</span>
+<span class="text-primary font-bold">73 VIRAGES</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: PRÉPAREZ VOTRE PROCHAINE JOURNÉE CIRCUIT (FINAL CTA) -->
+<section class="w-full py-space-xl md:py-28 bg-[#020F1E] relative overflow-hidden" id="contact-modal">
+<div class="absolute inset-0 opacity-20">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAteTGaf3uXx2iC0eErIghCT7s2v6-lanFXKRu3md6YmKicfMa6sA_NAj4W9zqpfZ0oVAVJySeJv-cvVZ8qo4ikBwK1ZTJOT-SlYrqRqH8pgmeDW9RsHFrRrsu_UHsF57vlHDJQroAOg_J-WkrQ7SIgyQiVa4AUECt10Ch2pE_20Pc_oCSvzkOye0owsH1D_MDO3v_A8eZqBAn8cXC3GfyK85N-Sx3Ex9pQmgfE1hkO909HIElTLqE')">
+</div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop">
+<div class="p-space-xl md:p-16 rounded-xl bg-gradient-to-r from-[#091D35] to-[#122030] border border-white/15 shadow-[0_25px_60px_rgba(0,0,0,0.85)] flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-xl">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-speed-crimson/15 border border-speed-crimson/30 mb-space-md">
+<span class="w-2 h-2 rounded-full bg-speed-crimson animate-ping"></span>
+<span class="font-index-marker text-index-marker text-speed-crimson uppercase tracking-widest">Inscriptions Ouvertes 2025</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl uppercase text-pure-white leading-tight mb-space-sm">
+          Prêt à enfiler le casque et à prendre la bonne trajectoire ?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Remplissez notre formulaire express pour recevoir nos dates prévisionnelles, réserver un box dédié ou convenir d'une prise en charge logistique pour votre véhicule.
+        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-md pt-space-md border-t border-white/10 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<span>Ligne directe atelier : 03 88 65 99 99</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<span>event@pegasus-racing.com</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex flex-col sm:flex-row items-center gap-space-md">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-4 rounded bg-primary-container text-pure-white font-label-uppercase text-label-uppercase uppercase tracking-wider transition-all duration-300 hover:bg-[#1665c0] hover:shadow-[0_0_24px_rgba(0,229,255,0.4)] group" href="mailto:event@pegasus-racing.com?subject=Demande%20Informations%20Trackday%20Pegasus%20Racing">
+<span>Demander des informations &amp; dates</span>
+<span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-carbon-black border-t border-white/10 pt-space-xl pb-space-lg text-on-surface-variant"><div class="max-w-[1440px] mx-auto px-margin md:px-gutter-desktop lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-white/5"><div class="lg:col-span-4 flex flex-col items-start"><div class="flex items-center gap-space-sm mb-space-md"><img alt="Pegasus Racing Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNO5fzISyCxTSfif_JOAuVW-ZGyR0N4_HkzDzsutc1IlXaCkszlo7pSPP1WWnwAya4yV5ifQOsM55zfmXQNNGnnhsf6rCQfYpwwWYmvknSZhiThjX3I502dR-lVAt-PJ6CMKd8lXgYEBdOqleq9U9VvpWFJJRxy0pAUqW7QX3-MjrPZSee9DJv8B9aijRb7PKHbWXiORuGf3QhFsgYLzaQaI-1An3R_MDPuQN5hfwxIochtb7QfpPrSw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-pure-white">Pegasus Racing</span><span class="font-index-marker text-index-marker text-electric-cyan uppercase">Ecurie Automobile</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-md">Team de compétition automobile &amp; atelier mécanique de pointe. Plus de 20 ans d'expertise au service de la performance et 4 participations aux 24 Heures du Mans.</p><div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-high/60 border border-white/10"><span class="w-2 h-2 rounded-full bg-speed-crimson animate-pulse"></span><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">24H Le Mans Veteran</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Navigation</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="accueil" href="#">Accueil</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="racing" href="#">Racing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="trackday" href="#">Trackday</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="event" href="#">Event</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-pure-white transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Atelier &amp; Siège</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><p class="text-on-surface">12 rue de l'ill, 67118 Geispolsheim</p><p class="text-on-surface">Tél : 03 88 65 99 99</p><a class="text-primary hover:text-pure-white transition-colors" href="mailto:info@pegasus-racing.com">info@pegasus-racing.com</a><a class="text-primary hover:text-pure-white transition-colors" href="mailto:event@pegasus-racing.com">event@pegasus-racing.com</a></div><div class="mt-space-xs pt-space-xs border-t border-white/5 flex flex-col gap-1"><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" data-path="mentions-legales" href="#">Mentions Légales</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" data-path="politique-de-confidentialite" href="#">Politique de Confidentialité</a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-index-marker text-index-marker uppercase tracking-widest text-pure-white">Réseaux Officiels</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suivez le team en direct des circuits et des paddocks internationaux.</p><div class="flex items-center gap-space-sm"><a class="px-3 py-2 rounded bg-surface-container-high border border-white/10 hover:border-primary font-label-uppercase text-label-uppercase uppercase text-pure-white hover:text-primary transition-all flex items-center gap-1.5" href="https://facebook.com" rel="noopener noreferrer" target="_blank"><span>Facebook</span><span class="material-symbols-outlined text-sm">open_in_new</span></a><a class="px-3 py-2 rounded bg-surface-container-high border border-white/10 hover:border-primary font-label-uppercase text-label-uppercase uppercase text-pure-white hover:text-primary transition-all flex items-center gap-1.5" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span>Instagram</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-outline"><p>© 2025 Pegasus Racing. Tous droits réservés. Conçu pour la performance.</p><p class="font-index-marker text-index-marker text-on-surface-variant/70 uppercase">ALSACE // MOTORSPORT SPECIFICATION</p></div></div></footer>
+<script>
+  // High-performance smooth parallax controller using requestAnimationFrame
+  (function initParallax() {
+    var heroBg = document.getElementById('hero-parallax-bg');
+    var interludeBg = document.getElementById('interlude-parallax-bg');
+    var interludeSec = document.getElementById('interlude-section');
+    var ticking = false;
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+          // Hero parallax
+          if (heroBg && scrollY <= window.innerHeight * 1.2) {
+            var heroOffset = scrollY * 0.35;
+            heroBg.style.transform = 'translateY(' + heroOffset + 'px)';
+          }
+
+          // Interlude section parallax
+          if (interludeBg && interludeSec) {
+            var rect = interludeSec.getBoundingClientRect();
+            var winHeight = window.innerHeight;
+            if (rect.top <= winHeight && rect.bottom >= 0) {
+              var relativeY = (rect.top / winHeight) * 55;
+              interludeBg.style.transform = 'translateY(' + relativeY + 'px)';
+            }
+          }
+
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+</body></html>
